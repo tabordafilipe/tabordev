@@ -1,12 +1,11 @@
-export interface ImageInfo {
+export interface IconInfo {
   href: string;
-  src: string;
-  alt: string;
+  name: string;
   title: string;
 }
 
 export interface Info {
   name: string;
   description: string;
-  clickableImages: ImageInfo[];
+  icons: IconInfo[];
 }

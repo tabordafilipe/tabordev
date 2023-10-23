@@ -2,29 +2,25 @@
   "name": "Filipe Taborda",
   "description": "Soo",
 
-  "clickableImages": [
+  "icons": [
     {
       "href": "https://github.com/tabordafilipe",
-      "src": "/github.svg",
-      "alt": "Github Icon",
+      "name": "github",
       "title": "Github"
     },
     {
       "href": "https://medium.com/@filipe.taborda92",
-      "src": "/medium.svg",
-      "alt": "Medium Icon",
+      "name": "medium",
       "title": "Medium"
     },
     {
       "href": "https://discordapp.com/users/h1064912041434955797",
-      "src": "/discord.svg",
-      "alt": "Discord Icon",
+      "name": "discord",
       "title": "Discord"
     },
     {
       "href": "mailto:filipe.taborda92@gmail.com",
-      "src": "/gmail.svg",
-      "alt": "Email Icon",
+      "name": "gmail",
       "title": "Email"
     }
   ]

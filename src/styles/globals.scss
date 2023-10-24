@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+$light-foreground-rgb: rgb(0, 0, 0);
+$light-background-start-rgb: rgb(214, 219, 220);
+$light-background-end-rgb: rgb(255, 255, 255);
+
+$dark-foreground-rgb: rgb(255, 255, 255);
+$dark-background-start-rgb: rgb(0, 0, 0);
+$dark-background-end-rgb: rgb(40, 40, 40);
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: $light-foreground-rgb;
+  --background-start-rgb: $light-background-start-rgb;
+  --background-end-rgb: $light-background-end-rgb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 40, 40, 40;
+    --foreground-rgb: $dark-foreground-rgb;
+    --background-start-rgb: $dark-background-start-rgb;
+    --background-end-rgb: $dark-background-end-rgb;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-rgb);
+  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
+    var(--background-start-rgb);
+
+  &.light {
+    color: $light-foreground-rgb;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        $light-background-end-rgb
+      )
+      $light-background-start-rgb;
+  }
+
+  &.dark {
+    color: $dark-foreground-rgb;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        $dark-background-end-rgb
+      )
+      $dark-background-start-rgb;
+  }
 }

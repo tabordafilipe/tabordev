@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 
-export default function useThemeDetector() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+export default function useSystemThemeDetector() {
+  const [isSystemDarkTheme, setIsSystemDarkTheme] = useState(false);
 
   const mqListener = (e: any) => {
-    setIsDarkTheme(e.matches);
+    setIsSystemDarkTheme(e.matches);
   };
 
   useEffect(() => {
-    setIsDarkTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    setIsSystemDarkTheme(
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
 
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
     darkThemeMq.addEventListener("change", mqListener);
@@ -16,5 +18,5 @@ export default function useThemeDetector() {
     return () => darkThemeMq.removeEventListener("change", mqListener);
   }, []);
 
-  return isDarkTheme;
+  return isSystemDarkTheme;
 }

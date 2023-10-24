@@ -6,15 +6,20 @@ import particlesOptionsDark from "@/assets/configs/particles/particles-dark.json
 import { loadFull } from "tsparticles";
 import type { Engine, ISourceOptions } from "tsparticles-engine";
 import styles from "./Background.module.scss";
-import useThemeDetector from "@/hooks/ThemeDetector";
+import { useDarkMode } from "usehooks-ts";
+import { useEffect, useState } from "react";
 
 export default function Background() {
-  const isDarkTheme = useThemeDetector();
+  const [options, setOptions] = useState(particlesOptions as ISourceOptions);
+  const { isDarkMode } = useDarkMode();
 
   const particlesInit = async (main: Engine) => await loadFull(main);
-  const options = (
-    isDarkTheme ? particlesOptionsDark : particlesOptions
-  ) as ISourceOptions;
+
+  useEffect(() => {
+    setOptions(
+      (isDarkMode ? particlesOptionsDark : particlesOptions) as ISourceOptions
+    );
+  }, [isDarkMode]);
 
   return (
     <Particles

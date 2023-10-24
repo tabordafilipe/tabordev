@@ -1,10 +1,9 @@
-import Image from "next/image";
 import styles from "./Icon.module.scss";
-import useThemeDetector from "@/hooks/ThemeDetector";
 import { useEffect, useRef } from "react";
+import { useDarkMode } from "usehooks-ts";
 
 export interface IconProps extends React.SVGAttributes<HTMLOrSVGElement> {
-  href: string;
+  href?: string;
   name: string;
   title: string;
   dimensions: {
@@ -20,7 +19,7 @@ const replaceColor = (svgString: string, newColor: string) => {
 };
 
 export default function Icon(props: IconProps) {
-  const isDarkTheme = useThemeDetector();
+  const { isDarkMode } = useDarkMode();
 
   const svgRef = useRef<SVGSVGElement>(null);
 
@@ -35,24 +34,27 @@ export default function Icon(props: IconProps) {
     svgElement().then((svg) => {
       svgRef!.current!.innerHTML = replaceColor(
         svg.default,
-        isDarkTheme ? "black" : "white"
+        isDarkMode ? "black" : "white"
       );
     });
-  }, [props.name, isDarkTheme]);
+  }, [props.name, isDarkMode]);
 
-  return (
-    <a
+  const svg = (
+    <svg
       className={styles.Icon}
-      href={props.href}
-      target="_blank"
-      title={props.title}
-    >
-      <svg
-        width={props.dimensions.width}
-        height={props.dimensions.height}
-        ref={svgRef}
-        {...props}
-      ></svg>
+      width={props.dimensions.width}
+      height={props.dimensions.height}
+      ref={svgRef}
+      onClick={props.onClick}
+      {...props}
+    />
+  );
+
+  return props.href ? (
+    <a href={props.href} target="_blank" title={props.title}>
+      {svg}
     </a>
+  ) : (
+    svg
   );
 }

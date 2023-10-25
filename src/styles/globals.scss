@@ -11,17 +11,27 @@ $dark-background-start-rgb: rgb(0, 0, 0);
 $dark-background-end-rgb: rgb(40, 40, 40);
 
 :root {
-  --foreground-rgb: $light-foreground-rgb;
-  --background-start-rgb: $light-background-start-rgb;
-  --background-end-rgb: $light-background-end-rgb;
+  --foreground-rgb: var($light-foreground-rgb);
+  --background-start-rgb: var($light-background-start-rgb);
+  --background-end-rgb: var($light-background-end-rgb);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: $dark-foreground-rgb;
-    --background-start-rgb: $dark-background-start-rgb;
-    --background-end-rgb: $dark-background-end-rgb;
+    --foreground-rgb: var($dark-foreground-rgb);
+    --background-start-rgb: var($dark-background-start-rgb);
+    --background-end-rgb: var($dark-background-end-rgb);
   }
+}
+
+@mixin theme-colors(
+  $foreground-rgb,
+  $background-end-rgb,
+  $background-start-rgb
+) {
+  color: $foreground-rgb;
+  background: linear-gradient(to bottom, transparent, $background-end-rgb)
+    $background-start-rgb;
 }
 
 body {
@@ -39,13 +49,19 @@ body {
       $light-background-start-rgb;
   }
 
+  &.light {
+    @include theme-colors(
+      $light-foreground-rgb,
+      $light-background-start-rgb,
+      $light-background-end-rgb
+    );
+  }
+
   &.dark {
-    color: $dark-foreground-rgb;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        $dark-background-end-rgb
-      )
-      $dark-background-start-rgb;
+    @include theme-colors(
+      $dark-foreground-rgb,
+      $dark-background-start-rgb,
+      $dark-background-end-rgb
+    );
   }
 }

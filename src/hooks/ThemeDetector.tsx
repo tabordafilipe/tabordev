@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
 
-export default function useSystemThemeDetector() {
-  const [isSystemDarkTheme, setIsSystemDarkTheme] = useState(false);
+/**
+ * @description
+ * can be used to get the current system theme (`light` or `dark`).
+ * should not be used in combination with `useDarkMode`, is a diffent hook.
+ *
+ * @returns
+ * if the current system theme is `dark`
+ */
+export default function useSystemThemeDetector(): boolean | undefined {
+  const [isSystemDarkTheme, setIsSystemDarkTheme] = useState<
+    boolean | undefined
+  >();
 
   const mqListener = (e: any) => {
     setIsSystemDarkTheme(e.matches);

@@ -32,10 +32,12 @@ export default function Icon(props: IconProps) {
     });
 
     svgElement().then((svg) => {
-      svgRef!.current!.innerHTML = replaceColor(
-        svg.default,
-        isDarkMode ? "black" : "white"
-      );
+      if (svgRef?.current) {
+        svgRef!.current!.innerHTML = replaceColor(
+          svg.default,
+          isDarkMode ? "black" : "white"
+        );
+      }
     });
   }, [props.name, isDarkMode]);
 
@@ -50,7 +52,7 @@ export default function Icon(props: IconProps) {
     />
   );
 
-  return props.href ? (
+  return props.href && svg ? (
     <a href={props.href} target="_blank" title={props.title}>
       {svg}
     </a>

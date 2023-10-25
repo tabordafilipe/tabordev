@@ -4,8 +4,7 @@ import Icon from "../Icon/Icon";
 import useThemeDetector from "@/hooks/ThemeDetector";
 
 export default function ThemeSwitcher() {
-  const isSystemDarkTheme = useThemeDetector();
-  const { isDarkMode, toggle } = useDarkMode(isSystemDarkTheme);
+  const { isDarkMode, toggle } = useDarkMode();
   const [iconName, setIconName] = useState<string | null>(null);
 
   useEffect(() => {

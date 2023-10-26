@@ -2,66 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-$light-foreground-rgb: rgb(0, 0, 0);
-$light-background-start-rgb: rgb(214, 219, 220);
-$light-background-end-rgb: rgb(255, 255, 255);
-
-$dark-foreground-rgb: rgb(255, 255, 255);
-$dark-background-start-rgb: rgb(0, 0, 0);
-$dark-background-end-rgb: rgb(40, 40, 40);
+@import "constants/index";
+@import "mixins";
 
 :root {
-  --foreground-rgb: var($light-foreground-rgb);
-  --background-start-rgb: var($light-background-start-rgb);
-  --background-end-rgb: var($light-background-end-rgb);
+  --foreground: #{$light-foreground};
+  --background-start: #{$light-background-start};
+  --background-end: #{$light-background-end};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: var($dark-foreground-rgb);
-    --background-start-rgb: var($dark-background-start-rgb);
-    --background-end-rgb: var($dark-background-end-rgb);
+    --foreground: #{$dark-foreground};
+    --background-start: #{$dark-background-start};
+    --background-end: #{$dark-background-end};
   }
-}
-
-@mixin theme-colors(
-  $foreground-rgb,
-  $background-end-rgb,
-  $background-start-rgb
-) {
-  color: $foreground-rgb;
-  background: linear-gradient(to bottom, transparent, $background-end-rgb)
-    $background-start-rgb;
 }
 
 body {
-  color: var(--foreground-rgb);
-  background: linear-gradient(to bottom, transparent, var(--background-end-rgb))
-    var(--background-start-rgb);
-
-  &.light {
-    color: $light-foreground-rgb;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        $light-background-end-rgb
-      )
-      $light-background-start-rgb;
-  }
+  @include theme-colors(
+    var(--foreground),
+    var(--background-start),
+    var(--background-end)
+  );
 
   &.light {
     @include theme-colors(
-      $light-foreground-rgb,
-      $light-background-start-rgb,
-      $light-background-end-rgb
+      $light-foreground,
+      $light-background-start,
+      $light-background-end
     );
   }
 
   &.dark {
     @include theme-colors(
-      $dark-foreground-rgb,
-      $dark-background-start-rgb,
-      $dark-background-end-rgb
+      $dark-foreground,
+      $dark-background-start,
+      $dark-background-end
     );
   }
 }

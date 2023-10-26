@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDarkMode } from "usehooks-ts";
 import Icon from "../Icon/Icon";
-import useThemeDetector from "@/hooks/ThemeDetector";
 
 export default function ThemeSwitcher() {
   const { isDarkMode, toggle } = useDarkMode();

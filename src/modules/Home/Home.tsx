@@ -27,7 +27,7 @@ export default function Home() {
       <div className="flex min-h-screen flex-col items-center justify-between">
         {logoSrc && (
           <Image
-            className="px-5"
+            className="px-5 pt-20"
             src={logoSrc}
             alt="Logo"
             width={600}

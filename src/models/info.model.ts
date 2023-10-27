@@ -7,5 +7,6 @@ export interface IconInfo {
 export interface Info {
   name: string;
   description: string;
+  summary: string;
   icons: IconInfo[];
 }

@@ -1,6 +1,15 @@
-.ThemeSwitcher {
+.Home {
+  &__ThemeSwitcher {
     padding: 10px;
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  &__MouseScrollContent {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

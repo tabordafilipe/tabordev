@@ -1,57 +1,32 @@
-import Image from "next/image";
 import Background from "@/components/Background/Background";
 import info from "@/assets/configs/info.json";
 import { Info } from "@/models/info.model";
-import Icon from "@/components/Icon/Icon";
 import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
-import { useDarkMode } from "usehooks-ts";
-import { useEffect, useState } from "react";
 import styles from "./Home.module.scss";
+import LogoLinks from "@/components/LogoLinks/LogoLinks";
+import About from "@/components/About/About";
+import Section from "@/components/Section/Section";
 
 const MY_INFO = info as Info;
 
 export default function Home() {
-  const { isDarkMode } = useDarkMode();
-  const [logoSrc, setLogoSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    setLogoSrc(`/logos/tabordev-logo${isDarkMode ? "-dark" : ""}.png`);
-  }, [isDarkMode]);
-
   return (
-    <main>
+    <main className="font-mono">
       <Background />
-      <div className={styles.ThemeSwitcher}>
+      <div className={styles.Home__ThemeSwitcher}>
         <ThemeSwitcher />
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-between">
-        {logoSrc && (
-          <Image
-            className="px-5 pt-20"
-            src={logoSrc}
-            alt="Logo"
-            width={600}
-            height={600}
-          />
-        )}
-
-        <div className="flex space-x-10">
-          {MY_INFO.icons.map((icon) => (
-            <Icon
-              key={icon.name}
-              href={icon.href}
-              name={icon.name}
-              title={icon.title}
-              dimensions={{
-                width: 50,
-                height: 50,
-              }}
-            />
-          ))}
+      <section className="h-screen w-screen">
+        <LogoLinks info={MY_INFO} />
+        <div className={styles.Home__MouseScrollContent}>
+          <div className="mouse dark:border-white-50 dark:before:bg-white-50"></div>
         </div>
-
-        <span className="font-mono text-base pb-20">coming soon ...</span>
-      </div>
+      </section>
+      <section className="w-screen pt-20">
+        <Section name="about .">
+          <About info={MY_INFO} />
+        </Section>
+      </section>
     </main>
   );
 }

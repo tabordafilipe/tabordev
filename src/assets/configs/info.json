@@ -1,8 +1,14 @@
 {
   "name": "Filipe Taborda",
-  "description": "Soo",
+  "description": "Software Frontend Developer",
+  "summary": "<p><strong>Hey 👋🏼</strong></p><br><p>I am Filipe Taborda from Portugal 🇵🇹, currently based in Lisbon.</p><br><p>Currently I am only focused in<strong>Frontend Developing</strong>, but I am always open to learn other technologies.</p><br><br><p><i>&quot;Life begins at the end of your confort zone.</i>- Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
 
   "icons": [
+    {
+      "href": "https://www.linkedin.com/in/filipe-taborda-79765a58",
+      "name": "linkedin",
+      "title": "Linkedin"
+    },
     {
       "href": "https://github.com/tabordafilipe",
       "name": "github",

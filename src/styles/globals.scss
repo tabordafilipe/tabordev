@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include theme-colors(
     var(--foreground),

@@ -1,15 +1,28 @@
 import Background from "@/components/Background/Background";
-import info from "@/assets/configs/info.json";
+import INFO from "@/assets/configs/info.json";
+import SECTIONS from "@/assets/configs/sections.json";
 import { Info } from "@/models/info.model";
 import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
 import styles from "./Home.module.scss";
-import LogoLinks from "@/components/LogoLinks/LogoLinks";
+import MyInfo from "@/components/MyInfo/MyInfo";
 import About from "@/components/About/About";
 import Section from "@/components/Section/Section";
+import { useContext, useState } from "react";
+import { IsLogoVisibleContext } from "@/hooks/IsVisible";
+import { Sections } from "@/models/section.model";
 
-const MY_INFO = info as Info;
+const info = INFO as Info;
+const { about } = SECTIONS as Sections;
 
 export default function Home() {
+  const { isLogoVisible } = useContext(IsLogoVisibleContext);
+
+  const [, setIsLogoVisible] = useState(false);
+
+  const onLogoVisible = (visible: boolean) => {
+    setIsLogoVisible(visible);
+  };
+
   return (
     <main className="font-mono">
       <Background />
@@ -17,14 +30,19 @@ export default function Home() {
         <ThemeSwitcher />
       </div>
       <section className="h-screen w-screen">
-        <LogoLinks info={MY_INFO} />
+        <MyInfo info={info} onLogoVisible={onLogoVisible} />
         <div className={styles.Home__MouseScrollContent}>
-          <div className="mouse dark:border-white-50 dark:before:bg-white-50"></div>
+          <div
+            className={`mouse dark:border-white-50 dark:before:bg-white-50 transition-opacity ease-in duration-700 ${
+              isLogoVisible ? "opacity-100" : "opacity-0"
+            }`}
+          ></div>
         </div>
       </section>
-      <section className="w-screen pt-20">
-        <Section name="about .">
-          <About info={MY_INFO} />
+
+      <section id={about.id} className="w-screen py-20">
+        <Section name={about.name}>
+          <About info={info} />
         </Section>
       </section>
     </main>

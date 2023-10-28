@@ -1,0 +1,84 @@
+@import "../../styles/constants/index.scss";
+
+.Header {
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+  }
+
+  &__Links {
+    &__Link {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 45px;
+      margin: 0 0 2em;
+      max-width: 160px;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &_Effect {
+        letter-spacing: 0;
+
+        &::after,
+        &::before {
+          backface-visibility: hidden;
+          border-bottom: 1px solid $light-foreground;
+          bottom: 0px;
+          content: " ";
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          transition: all 280ms ease-in-out;
+          width: 0;
+        }
+
+        &:active {
+          letter-spacing: 5px;
+        }
+
+        &:hover {
+          letter-spacing: 5px;
+          &::after,
+          &::before {
+            backface-visibility: hidden;
+            border-color: $light-foreground;
+            transition: width 350ms ease-in-out;
+            width: 70%;
+          }
+          &::before {
+            bottom: auto;
+            top: 0;
+            width: 70%;
+          }
+        }
+
+        &--dark {
+          &::after,
+          &::before {
+            border-bottom: 1px solid $dark-foreground;
+          }
+
+          &:hover {
+            &::after,
+            &::before {
+              border-color: $dark-foreground;
+            }
+          }
+        }
+      }
+    }
+  }
+}

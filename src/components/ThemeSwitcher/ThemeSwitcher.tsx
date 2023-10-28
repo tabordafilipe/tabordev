@@ -24,8 +24,8 @@ export default function ThemeSwitcher() {
         name={iconName}
         title="Switch Theme"
         dimensions={{
-          width: 35,
-          height: 35,
+          width: 25,
+          height: 25,
         }}
         onClick={handleThemeChange}
       />

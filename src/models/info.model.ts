@@ -6,7 +6,7 @@ export interface IconInfo {
 
 export interface Info {
   name: string;
-  description: string;
+  descriptionSequence: Array<string | number>;
   summary: string;
   icons: IconInfo[];
 }

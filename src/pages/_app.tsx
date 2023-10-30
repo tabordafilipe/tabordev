@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
 import "@/styles/globals.scss";
@@ -16,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Header></Header>
       <Component {...pageProps} />
-      {/* <footer>footer</footer> */}
+      <Footer />
     </IsLogoVisibleContext.Provider>
   );
 }

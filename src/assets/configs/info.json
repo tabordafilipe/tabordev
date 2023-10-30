@@ -6,7 +6,7 @@
     "(frontend) software developer",
     1000
   ],
-  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda from Portugal 🇵🇹, currently based in Lisbon.</p><br><p>I consider myself a <strong>full-stack engineer</strong> but currently I am only focused in <strong>frontend development</strong>.</p><br><p>Never the less, I am always open to learn other technologies. 🚀</p><br><br><p><i>Life begins at the end of your confort zone.</i> - Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
+  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda from Portugal 🇵🇹, currently based in Lisbon.</p><br><p>I consider myself a <strong>full-stack engineer</strong> but currently I am only focused in <strong>frontend development</strong>.</p><br><p>Never the less, I am always open to learn other and new technologies. 🚀</p><br><br><p><i>Life begins at the end of your confort zone.</i> - Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
 
   "icons": [
     {
@@ -30,7 +30,7 @@
       "title": "Discord"
     },
     {
-      "href": "mailto:filipe.taborda92@gmail.com",
+      "href": "mailto:tabordev.code@gmail.com",
       "name": "gmail",
       "title": "Email"
     }

@@ -3,13 +3,13 @@ import { useEffect, useRef } from "react";
 import { useDarkMode } from "usehooks-ts";
 
 export interface IconProps extends React.SVGAttributes<HTMLOrSVGElement> {
-  href?: string;
   name: string;
   title: string;
   dimensions: {
     width: number;
     height: number;
   };
+  href?: string;
 }
 
 const replaceColor = (svgString: string, newColor: string) => {

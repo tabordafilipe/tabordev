@@ -7,3 +7,7 @@
   background: linear-gradient(to bottom, transparent, $background-end)
     $background-start;
 }
+
+@mixin blur($blurPx: 5px) {
+  backdrop-filter: blur($blurPx);
+}

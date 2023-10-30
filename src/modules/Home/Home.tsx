@@ -10,13 +10,15 @@ import Section from "@/components/Section/Section";
 import { useContext, useState } from "react";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
 import { Sections } from "@/models/section.model";
+import { useIsMobile } from "@/hooks/IsMobile";
 
 const info = INFO as Info;
 const { about } = SECTIONS as Sections;
 
 export default function Home() {
-  const { isLogoVisible } = useContext(IsLogoVisibleContext);
+  const isMobile = useIsMobile();
 
+  const { isLogoVisible } = useContext(IsLogoVisibleContext);
   const [, setIsLogoVisible] = useState(false);
 
   const onLogoVisible = (visible: boolean) => {
@@ -26,9 +28,11 @@ export default function Home() {
   return (
     <main className="font-mono">
       <Background />
-      <div className={styles.Home__ThemeSwitcher}>
-        <ThemeSwitcher />
-      </div>
+      {!isMobile && (
+        <div className={styles.Home__ThemeSwitcher}>
+          <ThemeSwitcher />
+        </div>
+      )}
       <section className="h-screen w-screen">
         <MyInfo info={info} onLogoVisible={onLogoVisible} />
         <div className={styles.Home__MouseScrollContent}>
@@ -40,7 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id={about.id} className="w-screen py-20">
+      <section id={about.id} className="w-screen py-28">
         <Section name={about.name}>
           <About info={info} />
         </Section>

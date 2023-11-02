@@ -46,4 +46,12 @@ body {
       $dark-background-end
     );
   }
+
+  &.drawer-open {
+    overflow-y: hidden;
+
+    footer {
+      visibility: hidden;
+    }
+  }
 }

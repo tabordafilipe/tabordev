@@ -22,9 +22,7 @@ export default function Header() {
   const [linkClassName, setLinkClassName] = useState("");
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   const handleOpen = useCallback(() => setIsDrawerOpen(true), []);
-
   const handleClose = useCallback(() => setIsDrawerOpen(false), []);
 
   useEffect(() => {

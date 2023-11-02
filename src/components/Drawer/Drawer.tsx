@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactNode } from "react";
+import React, { PropsWithChildren, ReactNode, useEffect } from "react";
 import styles from "./Drawer.module.scss";
 import { useDarkMode } from "usehooks-ts";
 import Icon from "../Icon/Icon";
@@ -24,6 +24,16 @@ export default function Drawer({
 }: PropsWithChildren<DrawerProps>) {
   const { isDarkMode } = useDarkMode();
   const anchorClassName = styles[`Drawer_${anchor}`];
+
+  const drawerOpenClassName = "drawer-open";
+
+  useEffect(() => {
+    if (open) {
+      document.documentElement.classList.add(drawerOpenClassName);
+    } else {
+      document.documentElement.classList.remove(drawerOpenClassName);
+    }
+  }, [open]);
 
   return (
     <>

@@ -22,6 +22,14 @@
 
 html {
   scroll-behavior: smooth;
+
+  &.drawer-open {
+    overflow: hidden;
+
+    footer {
+      visibility: hidden;
+    }
+  }
 }
 
 body {

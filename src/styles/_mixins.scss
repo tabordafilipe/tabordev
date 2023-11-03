@@ -1,8 +1,4 @@
-@mixin theme-colors(
-  $foreground,
-  $background-start,
-  $background-end
-) {
+@mixin theme-colors($foreground, $background-start, $background-end) {
   color: $foreground;
   background: linear-gradient(to bottom, transparent, $background-end)
     $background-start;
@@ -10,4 +6,24 @@
 
 @mixin blur($blurPx: 5px) {
   backdrop-filter: blur($blurPx);
+}
+
+@mixin circle($size, $color, $border-color: black) {
+  height: $size;
+  width: $size;
+  background-color: $color;
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: $border-color;
+}
+
+@mixin half-circle($size, $color, $border-color: black) {
+  width: calc($size / 2);
+  height: $size;
+  background-color: $color;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: $border-color;
 }

@@ -1,0 +1,15 @@
+@import "../../../styles/constants/index.scss";
+@import "../../../styles/mixins";
+
+$skill_color: $green_25;
+$skill_border: $blue_25;
+
+.Skill {
+  &__Circle {
+    @include circle(1.5rem, $skill_color, $skill_border);
+
+    &_Half {
+      @include half-circle(1.5rem, $skill_color, $skill_border);
+    }
+  }
+}

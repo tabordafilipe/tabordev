@@ -1,7 +1,12 @@
 {
   "about": {
-    "id": "about",
+    "id": "section-about",
     "name": "about",
-    "href": "#about"
+    "href": "#section-about"
+  },
+  "skills": {
+    "id": "section-skills",
+    "name": "skills",
+    "href": "#section-skills"
   }
 }

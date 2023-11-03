@@ -1,0 +1,120 @@
+{
+  "skills": [
+    {
+      "id": "skill-angular",
+      "name": "angular",
+      "description": "Angular",
+      "classification": 5
+    },
+    {
+      "id": "skill-react",
+      "name": "react",
+      "description": "React",
+      "classification": 3.5
+    },
+    {
+      "id": "skill-nodejs",
+      "name": "nodejs",
+      "description": "Node.JS",
+      "classification": 4
+    },
+    {
+      "id": "skill-rxjs",
+      "name": "rxjs",
+      "description": "RxJS",
+      "classification": 4.5
+    },
+    {
+      "id": "skill-ngrx",
+      "name": "ngrx",
+      "description": "NgRx",
+      "classification": 4
+    },
+    {
+      "id": "skill-jasmine",
+      "name": "jasmine",
+      "description": "Jasmine",
+      "classification": 3.5
+    },
+    {
+      "id": "skill-typescript",
+      "name": "typescript",
+      "description": "Typescript",
+      "classification": 4.5
+    },
+    {
+      "id": "skill-javascript",
+      "name": "javascript",
+      "description": "Javascript",
+      "classification": 4.5
+    },
+    {
+      "id": "skill-html5",
+      "name": "html5",
+      "description": "HTML5",
+      "classification": 4.5
+    },
+    {
+      "id": "skill-css3",
+      "name": "css3",
+      "description": "CSS3",
+      "classification": 4
+    },
+    {
+      "id": "skill-sass",
+      "name": "sass",
+      "description": "SaSS",
+      "classification": 4
+    }
+  ],
+  "otherSkills": [
+    {
+      "id": "skill-mariadb",
+      "name": "mariadb",
+      "description": "MariaDB",
+      "classification": 3
+    },
+    {
+      "id": "skill-mongodb",
+      "name": "mongodb",
+      "description": "MongoDB",
+      "classification": 3.5
+    },
+    {
+      "id": "skill-docker",
+      "name": "docker",
+      "description": "Docker",
+      "classification": 4
+    },
+    {
+      "id": "skill-kubernetes",
+      "name": "kubernetes",
+      "description": "Kubernetes",
+      "classification": 3
+    },
+    {
+      "id": "skill-aws",
+      "name": "aws",
+      "description": "AWS",
+      "classification": 2
+    },
+    {
+      "id": "skill-azure",
+      "name": "azure",
+      "description": "Azure",
+      "classification": 2
+    },
+    {
+      "id": "skill-git",
+      "name": "git",
+      "description": "Git",
+      "classification": 3
+    },
+    {
+      "id": "skill-visualcode",
+      "name": "visualcode",
+      "description": "Visual Code",
+      "classification": 3
+    }
+  ]
+}

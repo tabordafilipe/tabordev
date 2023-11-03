@@ -33,6 +33,8 @@ export default function Home() {
           <ThemeSwitcher />
         </div>
       )}
+
+      {/* INFO section */}
       <section className="h-screen w-screen">
         <MyInfo info={info} onLogoVisible={onLogoVisible} />
         <div className={styles.Home__MouseScrollContent}>
@@ -44,11 +46,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id={about.id} className="w-screen py-28">
-        <Section name={about.name}>
-          <About info={info} />
-        </Section>
-      </section>
+      {/* ABOUT section */}
+      <Section id={about.id} name={about.name}>
+        <About info={info} />
+      </Section>
     </main>
   );
 }

@@ -11,9 +11,10 @@ import { useContext, useState } from "react";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
 import { Sections } from "@/models/section.model";
 import { useIsMobile } from "@/hooks/IsMobile";
+import Skills from "@/components/Skills/Skills";
 
 const info = INFO as Info;
-const { about } = SECTIONS as Sections;
+const { about, skills } = SECTIONS as Sections;
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -49,6 +50,11 @@ export default function Home() {
       {/* ABOUT section */}
       <Section id={about.id} name={about.name}>
         <About info={info} />
+      </Section>
+
+      {/* SKILLS section */}
+      <Section id={skills.id} name={skills.name}>
+        <Skills />
       </Section>
     </main>
   );

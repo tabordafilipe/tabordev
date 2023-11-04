@@ -14,8 +14,9 @@
   background-color: $color;
   border-radius: 5rem;
   border-style: solid;
-  border-width: 0.1px;
+  border-width: 0.7px;
   border-color: $border-color;
+  box-shadow: 2px 2px 4px $gray_25;
 }
 
 @mixin half-circle($size, $color, $border-color: black) {
@@ -24,6 +25,7 @@
   background-color: $color;
   border-radius: 100% 0 0 100% / 50% 0 0 50%;
   border-style: solid;
-  border-width: 0.1px;
+  border-width: 0.7px;
   border-color: $border-color;
+  box-shadow: 2px 2px 4px $gray_25;
 }

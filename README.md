@@ -10,6 +10,7 @@ Live version: [tabordev.com](https://tabordev.com)
 - [React.js](https://react.dev)
 - [React Particles](https://github.com/tsparticles/react)
 - [React Type Animation](https://github.com/maxeth/react-type-animation)
+- [React Vertical Timeline Component](https://github.com/stephane-monnot/react-vertical-timeline)
 - [Use Hooks](https://usehooks-ts.com/)
 
 ## How to run locally

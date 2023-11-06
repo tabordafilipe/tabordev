@@ -13,6 +13,12 @@
       "classification": 3.5
     },
     {
+      "id": "skill-nextjs",
+      "name": "nextjs",
+      "description": "Next.JS",
+      "classification": 3.5
+    },
+    {
       "id": "skill-nodejs",
       "name": "nodejs",
       "description": "Node.JS",

@@ -19,6 +19,17 @@
   box-shadow: 2px 2px 4px $gray_25;
 }
 
+@mixin circle-half-painted($size, $color, $border-color: black) {
+  width: $size;
+  height: $size;
+  background: linear-gradient(90deg, $color, $color 50%, transparent 50%);
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: 0.7px;
+  border-color: $border-color;
+  box-shadow: 2px 2px 4px $gray_25;
+}
+
 @mixin half-circle($size, $color, $border-color: black) {
   width: calc($size / 2);
   height: $size;

@@ -17,13 +17,18 @@ const config: Config = {
       blue: {
         DEFAULT: "#2b3a57",
         25: "#2b3a57",
+        50: "#0066a4",
       },
       green: {
         DEFAULT: "#aeb6b0",
         10: "#aeb9b0",
         25: "#aeb9b0",
         50: "#6b756c",
-      }
+      },
+      orange: {
+        DEFAULT: "#fac898",
+        25: "#fac898",
+      },
     },
     extend: {
       backgroundImage: {

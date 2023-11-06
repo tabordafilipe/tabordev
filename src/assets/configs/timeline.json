@@ -1,0 +1,84 @@
+{
+  "steps": [
+    {
+      "id": "step-bosch",
+      "type": "work",
+      "date": "Nov 2022 — Present",
+      "title": "Bosch",
+      "subtitle": "Senior Frontend Developer",
+      "description": "<a href=\"https://www.bosch-refinemysite.us/\" target=\"_blank\"><strong>RefinemySite.</strong></a><br><br>LEAN colaboration platform.",
+      "image": "bosch.png",
+      "chips": ["Angular 16", "NgRx", "RxJS", "Three.js", "IFC.js", "Jasmine"]
+    },
+    {
+      "id": "step-kpmg2",
+      "type": "work",
+      "date": "Feb 2022 — Nov 2022",
+      "title": "KPMG",
+      "subtitle": "Senior Frontend Developer",
+      "description": "<strong>KYC - New clients onboarding</strong><br><br>Building a <i>Know Your Customer</i> platform, with 7 frontend developers.<br> I was part of the leading team, with other frontend co-worker.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+      "image": "kpmg.png",
+      "chips": ["Angular 12", "Micro-frontends", "Nest.JS", "Node.JS", "RxJS"]
+    },
+    {
+      "id": "step-kpmg1",
+      "type": "work",
+      "date": "Oct 2021 — Feb 2022",
+      "title": "KPMG",
+      "subtitle": "Frontend Developer",
+      "description": "<strong>AEOI - Tax reporting</strong><br><br>Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i><br>Lead frontend team of 4 developers.",
+      "image": "kpmg.png",
+      "chips": ["Angular 12", "AngularJS", "Migration"]
+    },
+    {
+      "id": "step-wow",
+      "type": "work",
+      "date": "May 2021 — Oct 2021",
+      "title": "WOW!",
+      "subtitle": "Full Stack Developer",
+      "description": "<strong>US Telco</strong><br><br>Develop new features for <i>WOW! for business.</i><br>Lead frontend team of 6 developers.",
+      "image": "wow.png",
+      "chips": ["React", "Next.js", "Node.JS", "Serverless", "AWS"]
+    },
+    {
+      "id": "step-nos",
+      "type": "work",
+      "date": "Oct 2018 — May 2021",
+      "title": "NOS",
+      "subtitle": "Full Stack Developer",
+      "description": "<strong>PT Telco</strong><br><br>Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>Also have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+      "image": "nos.png",
+      "imageDark": "nos-dark.png",
+      "chips": [
+        "Angular 7-11",
+        "Node.JS",
+        "Express",
+        "Nest.js",
+        "Java",
+        "MongoDB",
+        "Docker",
+        "K8"
+      ]
+    },
+    {
+      "id": "step-cgi",
+      "type": "work",
+      "date": "Jul 2017 — Oct 2018",
+      "title": "CGI",
+      "subtitle": "Junior Full Stack Developer",
+      "description": "<strong>EDSN, Netherlands</strong><br><br>Migrate an internal management webapp from Adobe Flash into Angular 6 on the frontend and Sprint MVN framework with Java 8 on the backend.",
+      "image": "cgi.png",
+      "chips": ["Angular 6", "Adobe Flash", "Spring MVN", "Java 8"]
+    },
+    {
+      "id": "step-iscte",
+      "type": "education",
+      "date": "Jul 2017",
+      "title": "ISCTE",
+      "subtitle": "Computer Science and Telecommunications Engineering",
+      "description": "<strong>Bachelor degree</strong><br><br>ISCTE-IUL - University Instituite of Lisbon",
+      "image": "iscte.png",
+      "imageDark": "iscte-dark.png"
+    }
+  ]
+}

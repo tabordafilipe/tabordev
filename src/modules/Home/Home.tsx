@@ -12,9 +12,10 @@ import { IsLogoVisibleContext } from "@/hooks/IsVisible";
 import { Sections } from "@/models/section.model";
 import { useIsMobile } from "@/hooks/IsMobile";
 import Skills from "@/components/Skills/Skills";
+import Timeline from "@/components/Timeline/Timeline";
 
 const info = INFO as Info;
-const { about, skills } = SECTIONS as Sections;
+const { about, skills, timeline } = SECTIONS as Sections;
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -55,6 +56,11 @@ export default function Home() {
       {/* SKILLS section */}
       <Section id={skills.id} name={skills.name}>
         <Skills />
+      </Section>
+
+      {/* TIMELINE section */}
+      <Section id={timeline.id} name={timeline.name}>
+        <Timeline />
       </Section>
     </main>
   );

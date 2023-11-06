@@ -1,15 +1,37 @@
 @import "../../../styles/constants/index.scss";
 @import "../../../styles/mixins";
 
+$size: 1.5rem;
+$transparent: transparent;
 $skill_color: $green_25;
 $skill_border: $blue_25;
+$skill_border_dark: $white_25;
 
 .Skill {
   &__Circle {
-    @include circle(1.5rem, $skill_color, $skill_border);
+    @include circle($size, $transparent, $skill_border);
 
-    &_Half {
-      @include half-circle(1.5rem, $skill_color, $skill_border);
+    &_Filled {
+      @include circle($size, $skill_color, $skill_border);
+    }
+
+    &_HalfFilled {
+      @include circle-half-painted($size, $skill_color, $skill_border);
+    }
+
+    &--dark {
+      @include circle($size, $transparent, $skill_border_dark);
+      box-shadow: unset;
+
+      &_Filled {
+        @include circle($size, $skill_color, $skill_border_dark);
+        box-shadow: unset !important;
+      }
+
+      &_HalfFilled {
+        @include circle-half-painted($size, $skill_color, $skill_border_dark);
+        box-shadow: unset !important;
+      }
     }
   }
 }

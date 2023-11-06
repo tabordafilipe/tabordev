@@ -8,5 +8,10 @@
     "id": "section-skills",
     "name": "skills",
     "href": "#section-skills"
+  },
+  "timeline": {
+    "id": "section-timeline",
+    "name": "timeline",
+    "href": "#section-timeline"
   }
 }

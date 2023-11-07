@@ -18,18 +18,12 @@
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
 
-  @include theme-colors(
-    $light-foreground,
-    $light-background-start,
-    $light-background-end
-  );
+  @include theme-color($light-foreground);
+  @include theme-background($light-background-start, $light-background-end);
 
   &--dark {
-    @include theme-colors(
-      $dark-foreground,
-      $dark-background-start,
-      $dark-background-end
-    );
+    @include theme-color($dark-foreground);
+    @include theme-background($dark-background-start, $dark-background-end);
   }
 
   &--hidden {

@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 export default function Background() {
   const [options, setOptions] = useState(particlesOptions as ISourceOptions);
+  const [className, setClassName] = useState("");
   const { isDarkMode } = useDarkMode();
 
   const particlesInit = async (main: Engine) => await loadFull(main);
@@ -19,13 +20,21 @@ export default function Background() {
     setOptions(
       (isDarkMode ? particlesOptionsDark : particlesOptions) as ISourceOptions
     );
+    setClassName(
+      `${styles.Background} ${
+        styles[`Background--${isDarkMode ? "dark" : "light"}`]
+      }`
+    );
   }, [isDarkMode]);
 
   return (
-    <Particles
-      className={styles.Background}
-      init={particlesInit}
-      options={options}
-    />
+    <>
+      <div className={className}></div>
+      <Particles
+        className={styles.Background}
+        init={particlesInit}
+        options={options}
+      />
+    </>
   );
 }

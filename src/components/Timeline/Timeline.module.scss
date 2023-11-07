@@ -1,0 +1,8 @@
+.Timeline {
+  &--mobile,
+  &--mobile > *,
+  &--mobile > * > * {
+    visibility: visible !important;
+    animation: none !important;
+  }
+}

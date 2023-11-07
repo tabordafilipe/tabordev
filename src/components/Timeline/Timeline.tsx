@@ -1,7 +1,4 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useDarkMode } from "usehooks-ts";
 import { useEffect, useState } from "react";
@@ -13,6 +10,8 @@ import {
 } from "@/models/timeline.model";
 import TimelineElement from "./TimelineElement/TimelineElement";
 import TIMELINE from "../../assets/configs/timeline.json";
+import { useIsMobile } from "@/hooks/IsMobile";
+import timelineStyles from "./Timeline.module.scss";
 
 const { colors } = config.theme as any;
 const { steps } = TIMELINE as { steps: TimelineStep[] };
@@ -44,6 +43,8 @@ const setStyle = (
 });
 
 export default function Timeline() {
+  const isMobile = useIsMobile();
+
   const { isDarkMode } = useDarkMode();
   const [styles, setStyles] = useState<TimelineStyles | undefined>();
 
@@ -57,14 +58,14 @@ export default function Timeline() {
             colors.white.DEFAULT,
             colors.green[25],
             colors.black[25],
-            colors.white.DEFAULT,
+            colors.white.DEFAULT
           ),
           education: setStyle(
             colors.black[25],
             colors.white.DEFAULT,
             colors.green[25],
             colors.green[50],
-            colors.white.DEFAULT,
+            colors.white.DEFAULT
           ),
         },
       });
@@ -93,7 +94,10 @@ export default function Timeline() {
 
   return (
     styles && (
-      <VerticalTimeline lineColor={styles.line}>
+      <VerticalTimeline
+        lineColor={styles.line}
+        className={(isMobile && timelineStyles["Timeline--mobile"]) || ""}
+      >
         {steps.map((step) => (
           <TimelineElement
             key={step.id}

@@ -1,5 +1,8 @@
-@mixin theme-colors($foreground, $background-start, $background-end) {
+@mixin theme-color($foreground) {
   color: $foreground;
+}
+
+@mixin theme-background($background-start, $background-end) {
   background: linear-gradient(to bottom, transparent, $background-end)
     $background-start;
 }

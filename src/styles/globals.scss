@@ -33,25 +33,13 @@ html {
 }
 
 body {
-  @include theme-colors(
-    var(--foreground),
-    var(--background-start),
-    var(--background-end)
-  );
+  @include theme-color(var(--foreground));
 
   &.light {
-    @include theme-colors(
-      $light-foreground,
-      $light-background-start,
-      $light-background-end
-    );
+    @include theme-color($light-foreground);
   }
 
   &.dark {
-    @include theme-colors(
-      $dark-foreground,
-      $dark-background-start,
-      $dark-background-end
-    );
+    @include theme-color($dark-foreground);
   }
 }

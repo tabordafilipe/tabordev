@@ -3,17 +3,24 @@ import { PropsWithChildren } from "react";
 export interface SectionProps {
   id: string;
   name: string;
+  className?: string;
 }
 
 export default function Section({
   id,
   name,
+  className,
   children,
 }: PropsWithChildren<SectionProps>) {
   return (
-    <section id={id} className="w-screen pt-32 md:pt-36 pb-16 px-5 md:px-12 lg:px-40 xl:px-90 2xl:px-94">
-      <div className="h-full w-full flex flex-col items-center justify-center">
-        <h2 className="font-bold text-3xl pb-10">{name}</h2>
+    <section
+      id={id}
+      className={`w-screen pt-32 md:pt-36 pb-16 ${className || ""}`}
+    >
+      <div className="container px-5 m-auto flex flex-col items-center justify-center">
+        <h2 className="font-bold lowercase text-2xl tracking-widest overline decoration-1 pb-10">
+          {name}
+        </h2>
         {children}
       </div>
     </section>

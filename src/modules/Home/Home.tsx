@@ -1,21 +1,23 @@
-import Background from "@/components/Background/Background";
-import INFO from "@/assets/configs/info.json";
-import SECTIONS from "@/assets/configs/sections.json";
-import { Info } from "@/models/info.model";
-import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
-import styles from "./Home.module.scss";
-import MyInfo from "@/components/MyInfo/MyInfo";
-import About from "@/components/About/About";
-import Section from "@/components/Section/Section";
 import { useContext, useState } from "react";
+
+import About from "@/components/About/About";
+import Background from "@/components/Background/Background";
+import ContactMe from "@/components/ContactMe/ContactMe";
+import INFO from "@/assets/configs/info.json";
+import { Info } from "@/models/info.model";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
+import MyInfo from "@/components/MyInfo/MyInfo";
+import SECTIONS from "@/assets/configs/sections.json";
+import Section from "@/components/Section/Section";
 import { Sections } from "@/models/section.model";
-import { useIsMobile } from "@/hooks/IsMobile";
 import Skills from "@/components/Skills/Skills";
+import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
 import Timeline from "@/components/Timeline/Timeline";
+import styles from "./Home.module.scss";
+import { useIsMobile } from "@/hooks/IsMobile";
 
 const info = INFO as Info;
-const { about, skills, timeline } = SECTIONS as Sections;
+const { about, skills, timeline, contactme } = SECTIONS as Sections;
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -61,6 +63,11 @@ export default function Home() {
       {/* TIMELINE section */}
       <Section id={timeline.id} name={timeline.name}>
         <Timeline />
+      </Section>
+
+      {/* CONTACT ME section */}
+      <Section id={contactme.id} name={contactme.name} className={styles.Home__Section__ContactMe}>
+        <ContactMe />
       </Section>
     </main>
   );

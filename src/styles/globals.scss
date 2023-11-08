@@ -42,4 +42,9 @@ body {
   &.dark {
     @include theme-color($dark-foreground);
   }
+
+  ::selection {
+    color: $light-foreground;
+    background-color: $orange-25;
+  }
 }

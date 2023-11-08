@@ -13,5 +13,10 @@
     "id": "section-timeline",
     "name": "timeline",
     "href": "#section-timeline"
+  },
+  "contactme": {
+    "id": "section-contactme",
+    "name": "contact me",
+    "href": "#section-contactme"
   }
 }

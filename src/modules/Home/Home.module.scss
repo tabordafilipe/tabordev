@@ -1,3 +1,5 @@
+@import "../../styles/mixins";
+
 .Home {
   &__ThemeSwitcher {
     padding: 5rem;
@@ -11,5 +13,9 @@
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &__Section__ContactMe {
+    @include blur();
   }
 }

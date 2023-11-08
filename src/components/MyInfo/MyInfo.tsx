@@ -1,10 +1,10 @@
-import { Info } from "@/models/info.model";
-import { useState, useEffect, useRef, useContext } from "react";
-import { useDarkMode } from "usehooks-ts";
-import Icon from "../Icon/Icon";
 import { IsLogoVisibleContext, useIsVisible } from "@/hooks/IsVisible";
-import { TypeAnimation } from "react-type-animation";
+import { useContext, useEffect, useRef, useState } from "react";
+
+import Icon from "../Icon/Icon";
+import { Info } from "@/models/info.model";
 import Logo from "../Logo/Logo";
+import { TypeAnimation } from "react-type-animation";
 
 interface MyInfoProps {
   info: Info;
@@ -12,17 +12,10 @@ interface MyInfoProps {
 }
 
 export default function MyInfo({ info, onLogoVisible }: MyInfoProps) {
-  const { isDarkMode } = useDarkMode();
-  const [logoSrc, setLogoSrc] = useState<string | null>(null);
-
   const ref = useRef(null);
   const isVisible = useIsVisible(ref);
 
   const { setIsLogoVisible } = useContext(IsLogoVisibleContext);
-
-  useEffect(() => {
-    setLogoSrc(`/logos/tabordev-logo${isDarkMode ? "-dark" : ""}.png`);
-  }, [isDarkMode, isVisible, onLogoVisible]);
 
   useEffect(() => {
     onLogoVisible(isVisible);

@@ -1,0 +1,21 @@
+{
+  "info": {
+    "title": "Want to get in touch?",
+    "subtitle": "Reach me at",
+    "email": "tabordev.code@gmail.com",
+    "emailDescription": "tabordev.code@gmail.com",
+    "icons": [
+      {
+        "href": "https://www.linkedin.com/in/filipe-taborda-79765a58",
+        "name": "linkedin",
+        "title": "Linkedin"
+      },
+      {
+        "href": "https://github.com/tabordafilipe",
+        "name": "github",
+        "title": "Github"
+      }
+    ]
+  },
+  "websiteInfo": "<p>Coded in <a class=\"font-semibold hover:text-green-25\" href=\"https://code.visualstudio.com/\">Visual Studio Code</a>.<p>Built with <a class=\"font-semibold hover:text-green-25\"href=\"https://nextjs.org/\">Next.js</a> and <a class=\"font-semibold hover:text-green-25\" href=\"https://tailwindcss.com/\">Tailwind CSS</a>.<p>Deployed with <a class=\"font-semibold hover:text-green-25\" href=\"https://vercel.com/\">Vercel</a>.</p><br><br><p>Truly, hope you enjoyed my portfolio website ⚡️"
+}

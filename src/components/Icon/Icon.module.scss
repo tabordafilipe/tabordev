@@ -1,3 +1,9 @@
+@import "../../styles/constants/index.scss";
+
 .Icon {
   cursor: pointer;
+
+  &:hover {
+    color: $green-25;
+  }
 }

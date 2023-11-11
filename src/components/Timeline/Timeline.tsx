@@ -1,17 +1,19 @@
-import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { useDarkMode } from "usehooks-ts";
-import { useEffect, useState } from "react";
-import config from "../../../tailwind.config";
+
 import {
   TimelineStep,
   TimelineStyle,
   TimelineStyles,
 } from "@/models/timeline.model";
-import TimelineElement from "./TimelineElement/TimelineElement";
+import { useEffect, useState } from "react";
+
 import TIMELINE from "../../assets/configs/timeline.json";
-import { useIsMobile } from "@/hooks/IsMobile";
+import TimelineElement from "./TimelineElement/TimelineElement";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import config from "../../../tailwind.config";
 import timelineStyles from "./Timeline.module.scss";
+import { useDarkMode } from "usehooks-ts";
+import { useIsMobile } from "@/hooks/IsMobile";
 
 const { colors } = config.theme as any;
 const { steps } = TIMELINE as { steps: TimelineStep[] };
@@ -64,7 +66,7 @@ export default function Timeline() {
             colors.black[25],
             colors.white.DEFAULT,
             colors.green[25],
-            colors.green[50],
+            colors.green[25],
             colors.white.DEFAULT
           ),
         },
@@ -84,7 +86,7 @@ export default function Timeline() {
             colors.white.DEFAULT,
             colors.blue[25],
             colors.green[25],
-            colors.green[50],
+            colors.green[25],
             colors.white.DEFAULT
           ),
         },

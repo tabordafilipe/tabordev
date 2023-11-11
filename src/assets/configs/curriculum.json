@@ -1,0 +1,150 @@
+{
+  "info": {
+    "name": "Filipe Taborda",
+    "role": "Frontend Software Developer",
+    "contacts": {
+      "email": "tabordev.code@gmail.com",
+      "phone": "+351 913 360 567",
+      "linkedin": "linkedin.com/in/tabordafilipe",
+      "website": "tabordev.com"
+    }
+  },
+  "experience": {
+    "title": "Profissional Experience",
+    "jobs": [
+      {
+        "id": "job-bosch",
+        "company": "Bosch",
+        "date": "Nov 2022 — Present",
+        "role": "Senior Frontend Developer",
+        "project": "RefinemySite",
+        "description": "LEAN colaboration platform.",
+        "descriptionPDF": "LEAN colaboration platform.",
+        "skills": [
+          "Angular 16",
+          "NgRx",
+          "RxJS",
+          "Three.js",
+          "IFC.js",
+          "Jasmine"
+        ]
+      },
+      {
+        "id": "job-kpmg2",
+        "company": "KMPG (Boost IT)",
+        "date": "Feb 2022 — Nov 2022",
+        "role": "Senior Frontend Developer",
+        "project": "KYC - New clients onboarding",
+        "description": "Building a <i>Know Your Customer</i> platform, with 7 frontend developers.<br> I was part of the leading team, with other frontend co-worker.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+        "descriptionPDF": "Building a Know Your Customer platform, with 7 frontend developers.\nI was part of the leading team, with other frontend co-worker.\nWeb application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+        "skills": [
+          "Angular 12",
+          "Micro-frontends",
+          "Nest.JS",
+          "Node.JS",
+          "RxJS"
+        ]
+      },
+      {
+        "id": "job-kpmg1",
+        "company": "KMPG (Boost IT)",
+        "date": "Oct 2021 — Feb 2022",
+        "role": "Frontend Developer",
+        "project": "AEOI - Tax reporting",
+        "description": "Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i><br>Lead frontend team of 4 developers.",
+        "descriptionPDF": "Help and simplify tax reporting obligations.\nMigrate the old webapp from AngularJS to Angular 12.\nLead frontend team of 4 developers.",
+        "skills": ["Angular 12", "AngularJS", "Migration"]
+      },
+      {
+        "id": "job-wow",
+        "company": "WOW! (Innowave)",
+        "date": "May 2021 — Oct 2021",
+        "role": "Full Stack Developer",
+        "project": "US Telco",
+        "description": "Develop new features for <i>WOW! for business.</i><br>Lead frontend team of 6 developers.",
+        "descriptionPDF": "Develop new features for WOW! for business.\nLead frontend team of 6 developers.",
+        "skills": ["React", "Next.js", "Node.JS", "Serverless", "AWS"]
+      },
+      {
+        "id": "job-nos",
+        "company": "NOS (Innowave)",
+        "date": "Oct 2018 — May 2021",
+        "role": "Full Stack Developer",
+        "project": "PT Telco",
+        "description": "Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>Also have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA< and SIGI (webapps to be used by NOS co-workers).\nAlso have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+        "skills": [
+          "Angular 7-11",
+          "Node.JS",
+          "Express",
+          "Nest.js",
+          "Java",
+          "MongoDB",
+          "Docker",
+          "K8"
+        ]
+      },
+      {
+        "id": "job-cgi",
+        "company": "CGI",
+        "date": "Jul 2017 — Oct 2018",
+        "role": "Junior Full Stack Developer",
+        "project": "EDSN, Netherlands",
+        "description": "Migrate an internal management webapp from Adobe Flash into Angular 6 on the frontend and Sprint MVN framework with Java 8 on the backend.",
+        "descriptionPDF": "Migrate an internal management webapp from Adobe Flash into Angular 6 on the frontend and Sprint MVN framework with Java 8 on the backend.",
+        "skills": ["Angular 6", "Adobe Flash", "Spring MVN", "Java 8"]
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "description": "Portugal 🇵🇹, Lisbon.<br>I consider myself a <strong>full-stack engineer</strong> but I am currently only focused on <strong>front-end development</strong>.<br>I define myself being a communicative person and easy to learn about new subjects.",
+    "descriptionPDF": "Portugal, Lisbon.\nI consider myself a full-stack engineer but I am currently only focused on front-end development.\nI define myself being a communicative person and easy to learn about new subjects."
+  },
+  "skills": {
+    "title": "Skills",
+    "skillsGroups": [
+      {
+        "group": "Libraries & Frameworks",
+        "skills": [
+          "Angular",
+          "NgRx",
+          "RxJS",
+          "Next.js",
+          "React",
+          "Jasmine",
+          "Node.js",
+          "Nest.js"
+        ]
+      },
+      {
+        "group": "Programming Languages",
+        "skills": ["Typescript", "Javascript", "HTML5", "CSS3", "SASS", "LESS"]
+      },
+      {
+        "group": "Tools & Platforms",
+        "skills": [
+          "MariaDB",
+          "MongoDb",
+          "Docker",
+          "Kubernetes",
+          "AWS",
+          "Azure",
+          "Git",
+          "Visual Code"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "university": "ISCTE-IUL - University Instituite of Lisbon",
+    "course": "Computer Science and Telecommunications Engineering",
+    "degree": "Bachelor degree"
+  },
+  "interests": {
+    "title": "Interests",
+    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Dog owner. 🐶",
+    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nDog owner."
+  }
+}

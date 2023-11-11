@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 
 export interface SectionProps {
   id: string;
-  name: string;
+  name?: string;
   className?: string;
 }
 
@@ -18,9 +18,11 @@ export default function Section({
       className={`w-screen pt-32 md:pt-36 pb-16 ${className || ""}`}
     >
       <div className="container px-5 m-auto flex flex-col items-center justify-center">
-        <h2 className="font-bold lowercase text-2xl tracking-widest overline decoration-1 pb-10">
-          {name}
-        </h2>
+        {name && (
+          <h2 className="font-bold lowercase text-2xl tracking-widest overline decoration-1 pb-10">
+            {name}
+          </h2>
+        )}
         {children}
       </div>
     </section>

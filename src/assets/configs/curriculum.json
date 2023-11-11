@@ -31,7 +31,7 @@
       },
       {
         "id": "job-kpmg2",
-        "company": "KMPG (Boost IT)",
+        "company": "KPMG (Boost IT)",
         "date": "Feb 2022 — Nov 2022",
         "role": "Senior Frontend Developer",
         "project": "KYC - New clients onboarding",
@@ -47,7 +47,7 @@
       },
       {
         "id": "job-kpmg1",
-        "company": "KMPG (Boost IT)",
+        "company": "KPMG (Boost IT)",
         "date": "Oct 2021 — Feb 2022",
         "role": "Frontend Developer",
         "project": "AEOI - Tax reporting",
@@ -72,7 +72,7 @@
         "role": "Full Stack Developer",
         "project": "PT Telco",
         "description": "Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>Also have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
-        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA< and SIGI (webapps to be used by NOS co-workers).\nAlso have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA and SIGI (webapps to be used by NOS co-workers).\nAlso have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
         "skills": [
           "Angular 7-11",
           "Node.JS",

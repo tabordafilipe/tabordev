@@ -38,8 +38,9 @@ export default function Curriculum() {
           <Link
             className="flex flex-row space-x-2 items-center align-center text-lg font-semibold hover:text-green-25"
             href="/api/curriculum"
+            target="_blank"
           >
-            <span>Download</span>
+            <span>Download CV</span>
             <Icon
               name="download"
               title="Generate PDF"
@@ -153,9 +154,9 @@ export default function Curriculum() {
               ></p>
             </section>
 
-            {/* ABOUT section */}
+            {/* INTERESTS section */}
             <section
-              id="curriculum_section_about"
+              id="curriculum_section_interests"
               className="w-full flex flex-col space-y-4"
             >
               <h2 className={`${classes.h2} mb-5`}>{interests.title}</h2>

@@ -1,23 +1,31 @@
-import { useState, useEffect, useContext, useCallback } from "react";
-import { useDarkMode } from "usehooks-ts";
-import styles from "./Header.module.scss";
+import Drawer, { DrawerAnchor } from "../Drawer/Drawer";
+import { useCallback, useContext, useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+
+import Icon from "../Icon/Icon";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
-import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import Logo from "../Logo/Logo";
 import SECTIONS from "@/assets/configs/sections.json";
 import { Sections } from "@/models/section.model";
-import Logo from "../Logo/Logo";
-import Icon from "../Icon/Icon";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import styles from "./Header.module.scss";
+import { useDarkMode } from "usehooks-ts";
 import { useIsMobile } from "@/hooks/IsMobile";
-import Drawer, { DrawerAnchor } from "../Drawer/Drawer";
 
 const sections = SECTIONS as Sections;
 
 export default function Header() {
+  const router = useRouter();
+
   const { isDarkMode } = useDarkMode();
   const isMobile = useIsMobile();
 
+  const pathname = usePathname();
+
   const { isLogoVisible } = useContext(IsLogoVisibleContext);
-  const isHeaderLogoVisible = isLogoVisible === false;
+
+  const [isHomePage, setIsHomePage] = useState<boolean>();
+  const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>();
 
   const [linkClassName, setLinkClassName] = useState("");
 
@@ -33,8 +41,18 @@ export default function Header() {
     );
   }, [isDarkMode]);
 
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  useEffect(() => {
+    setIsHomePage(pathname === "/");
+    const isHeaderLogoVisible = isLogoVisible === false;
+    setIsHeaderVisible(!isHomePage || isHeaderLogoVisible);
+  }, [isHomePage, isLogoVisible, pathname]);
+
+  const handleLogoClick = () => {
+    if (isHomePage) {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    } else {
+      router.push("/");
+    }
   };
 
   const logo = isMobile ? (
@@ -56,13 +74,16 @@ export default function Header() {
   return (
     <header
       className={`fixed py-5 md:py-10 ${styles.Header} ${
-        isHeaderLogoVisible && styles["Header--visible"]
+        isHeaderVisible && styles["Header--visible"]
       }`}
     >
       <nav className="w-screen h-16">
         <div className="container h-full m-auto flex flex-row justify-between items-center align-center">
           <div className="px-5 md:px10">
-            <div className="cursor-pointer select-none" onClick={scrollTop}>
+            <div
+              className="cursor-pointer select-none"
+              onClick={handleLogoClick}
+            >
               {logo}
             </div>
           </div>

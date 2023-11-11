@@ -18,4 +18,55 @@
   &__Section__ContactMe {
     @include blur();
   }
+
+  &__Section__Curriculum {
+    @include blur();
+    transition: background-color 0.5s linear;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__Text {
+      margin-top: 50px;
+      opacity: 1;
+      visibility: visible;
+      transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215),
+        opacity 0.13333s linear;
+      transform: scale(1);
+    }
+
+    &__Icon {
+      margin: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.4s cubic-bezier(0.425, -0.195, 0.005, 1.215),
+        opacity 0.4s linear;
+      transform: translate3D(0, -4em, 0) scale(0);
+    }
+
+    &:hover {
+      transition: all 0.3s ease;
+
+      .Home__Section__Curriculum {
+        &__Text {
+          margin: 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translate3D(0, 4em, 0) scale(0.25);
+        }
+
+        &__Icon {
+          margin-top: 10px;
+          margin-bottom: 40px;
+          opacity: 1;
+          visibility: visible;
+          transform: translate3D(0,0,0) scale(1);
+        }
+      }
+    }
+  }
 }

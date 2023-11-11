@@ -1,8 +1,10 @@
+import "@/styles/globals.scss";
+
+import type { AppProps } from "next/app";
+import Background from "@/components/Background/Background";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
-import "@/styles/globals.scss";
-import type { AppProps } from "next/app";
 import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -16,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       }}
     >
       <Header></Header>
+      <Background />
       <Component {...pageProps} />
       <Footer />
     </IsLogoVisibleContext.Provider>

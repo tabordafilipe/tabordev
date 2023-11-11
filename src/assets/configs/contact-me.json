@@ -6,7 +6,7 @@
     "emailDescription": "tabordev.code@gmail.com",
     "icons": [
       {
-        "href": "https://www.linkedin.com/in/filipe-taborda-79765a58",
+        "href": "https://www.linkedin.com/in/tabordafilipe",
         "name": "linkedin",
         "title": "Linkedin"
       },
@@ -17,5 +17,5 @@
       }
     ]
   },
-  "websiteInfo": "<p>Coded in <a class=\"font-semibold hover:text-green-25\" href=\"https://code.visualstudio.com/\">Visual Studio Code</a>.<p>Built with <a class=\"font-semibold hover:text-green-25\"href=\"https://nextjs.org/\">Next.js</a> and <a class=\"font-semibold hover:text-green-25\" href=\"https://tailwindcss.com/\">Tailwind CSS</a>.<p>Deployed with <a class=\"font-semibold hover:text-green-25\" href=\"https://vercel.com/\">Vercel</a>.</p><br><br><p>Truly, hope you enjoyed my portfolio website ⚡️"
+  "websiteInfo": "<p>Coded in <a class=\"font-semibold hover:text-green-25\" href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a>.<p>Built with <a class=\"font-semibold hover:text-green-25\"href=\"https://nextjs.org/\" target=\"_blank\">Next.js</a> and <a class=\"font-semibold hover:text-green-25\" href=\"https://tailwindcss.com/\" target=\"_blank\">Tailwind CSS</a>.<p>Deployed with <a class=\"font-semibold hover:text-green-25\" href=\"https://vercel.com/\" target=\"_blank\">Vercel</a>.</p><br><p>Any bug or constructive suggestion, please <a class=\"font-semibold hover:text-green-25\" href=\"mailto:tabordev.code@gmail.com/\" target=\"_blank\">email me</a>.</p><br><p>Hope you enjoyed my portfolio website ⚡️</p>"
 }

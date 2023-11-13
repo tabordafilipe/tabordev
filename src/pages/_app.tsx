@@ -1,5 +1,6 @@
 import "@/styles/globals.scss";
 
+import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import Background from "@/components/Background/Background";
 import Footer from "@/components/Footer/Footer";
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header></Header>
       <Background />
       <Component {...pageProps} />
+      <Analytics />
       <Footer />
     </IsLogoVisibleContext.Provider>
   );

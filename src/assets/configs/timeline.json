@@ -26,7 +26,7 @@
       "date": "Oct 2021 — Feb 2022",
       "title": "KPMG",
       "subtitle": "Frontend Developer",
-      "description": "<strong>AEOI - Tax reporting</strong><br><br>Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i><br>Lead frontend team of 4 developers.",
+      "description": "<strong>AEOI - Tax reporting</strong><br><br>Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i>.",
       "image": "kpmg.png",
       "chips": ["Angular 12", "AngularJS", "Migration"]
     },
@@ -36,7 +36,7 @@
       "date": "May 2021 — Oct 2021",
       "title": "WOW!",
       "subtitle": "Full Stack Developer",
-      "description": "<strong>US Telco</strong><br><br>Develop new features for <i>WOW! for business.</i><br>Lead frontend team of 6 developers.",
+      "description": "<strong>US Telco</strong><br><br>Develop new features for <i>WOW! for business.</i>",
       "image": "wow.png",
       "chips": ["React", "Next.js", "Node.JS", "Serverless", "AWS"]
     },
@@ -46,7 +46,7 @@
       "date": "Oct 2018 — May 2021",
       "title": "NOS",
       "subtitle": "Full Stack Developer",
-      "description": "<strong>PT Telco</strong><br><br>Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>Also have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+      "description": "<strong>PT Telco</strong><br><br>Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).",
       "image": "nos.png",
       "imageDark": "nos-dark.png",
       "chips": [

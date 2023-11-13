@@ -1,27 +1,27 @@
 {
   "about": {
-    "id": "section-about",
+    "id": "about",
     "name": "about",
-    "href": "/#section-about"
+    "href": "/#about"
   },
   "skills": {
-    "id": "section-skills",
+    "id": "skills",
     "name": "skills",
-    "href": "/#section-skills"
+    "href": "/#skills"
   },
   "timeline": {
-    "id": "section-timeline",
+    "id": "timeline",
     "name": "timeline",
-    "href": "/#section-timeline"
+    "href": "/#timeline"
   },
   "curriculum": {
-    "id": "section-curriculum",
+    "id": "curriculum",
     "name": "curriculum",
     "href": "/curriculum"
   },
   "contactme": {
-    "id": "section-contactme",
-    "name": "contact me",
-    "href": "/#section-contactme"
+    "id": "contactme",
+    "name": "contact",
+    "href": "/#contactme"
   }
 }

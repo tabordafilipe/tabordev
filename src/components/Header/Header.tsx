@@ -68,7 +68,9 @@ export default function Header() {
   );
 
   const links = Object.entries(sections).map(([, section]) => (
-    <li key={section.id}>{link(section.name, section.href)}</li>
+    <li key={`header_link_${section.id}`}>
+      {link(section.name, section.href)}
+    </li>
   ));
 
   return (

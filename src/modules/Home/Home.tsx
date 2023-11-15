@@ -39,7 +39,7 @@ export default function Home() {
       )}
 
       {/* INFO section */}
-      <section className="h-screen w-screen">
+      <section className="h-screen w-full">
         <MyInfo info={info} onLogoVisible={onLogoVisible} />
         <div className={styles.Home__MouseScrollContent}>
           <div

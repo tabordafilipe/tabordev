@@ -19,7 +19,7 @@ const classes = {
 export default function Curriculum() {
   return (
     <main className="font-sans font-light leading-6 pt-32 md:pt-36">
-      <div className="container m-auto">
+      <div className="container p-2 m-auto">
         <div className="w-full flex justify-between px-4 py-2">
           <Link
             className="flex flex-row space-x-2 items-center align-center text-lg font-semibold hover:text-green-25"

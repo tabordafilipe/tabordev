@@ -15,7 +15,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`w-screen pt-32 md:pt-36 pb-16 ${className || ""}`}
+      className={`w-full pt-32 md:pt-36 pb-16 ${className || ""}`}
     >
       <div className="container px-5 m-auto flex flex-col items-center justify-center">
         {name && (

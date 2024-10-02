@@ -113,7 +113,7 @@ export default function CurriculumPDF() {
 
   return (
     <Document>
-      <Page size="A3" style={styles.page}>
+      <Page size="B3" style={styles.page}>
         <View style={{ ...styles.rowSection, ...styles.mainSection }}>
           {/* Left side */}
           <View style={styles.leftSide}>

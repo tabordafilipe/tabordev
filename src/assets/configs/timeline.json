@@ -1,12 +1,22 @@
 {
   "steps": [
     {
-      "id": "step-bosch",
+      "id": "step-bosch2",
       "type": "work",
-      "date": "Nov 2022 — Present",
+      "date": "Jan 2024 — Present",
       "title": "Bosch",
       "subtitle": "Senior Frontend Developer",
-      "description": "<a href=\"https://www.bosch-refinemysite.us/\" target=\"_blank\"><strong>RefinemySite.</strong></a><br><br>LEAN colaboration platform.",
+      "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360 (One PRO Ecosystem)</strong></a><br><br>Pro360 is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams, which includes 3 frontend developers, myself included.<br>Our work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
+      "image": "bosch.png",
+      "chips": ["React", "React Native", "Redux", "RxJS", "Jasmine"]
+    },
+    {
+      "id": "step-bosch1",
+      "type": "work",
+      "date": "Nov 2022 — Jan 2024",
+      "title": "Bosch",
+      "subtitle": "Senior Frontend Developer",
+      "description": "<a href=\"https://www.bosch-refinemysite.us/\" target=\"_blank\"><strong>RefinemySite</strong></a><br><br>LEAN colaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
       "image": "bosch.png",
       "chips": ["Angular 16", "NgRx", "RxJS", "Three.js", "IFC.js", "Jasmine"]
     },
@@ -25,7 +35,7 @@
       "type": "work",
       "date": "Oct 2021 — Feb 2022",
       "title": "KPMG",
-      "subtitle": "Frontend Developer",
+      "subtitle": "Senior Frontend Developer",
       "description": "<strong>AEOI - Tax reporting</strong><br><br>Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i>.",
       "image": "kpmg.png",
       "chips": ["Angular 12", "AngularJS", "Migration"]

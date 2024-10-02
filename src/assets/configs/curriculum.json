@@ -13,13 +13,23 @@
     "title": "Profissional Experience",
     "jobs": [
       {
-        "id": "job-bosch",
+        "id": "job-bosch1",
         "company": "Bosch",
-        "date": "Nov 2022 — Present",
+        "date": "Jan 2024 — Present",
+        "role": "Senior Frontend Developer",
+        "project": "PRO360 (One PRO Ecosystem)",
+        "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360</strong></a> is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams, which includes 3 frontend developers, myself included.<br>Our work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
+        "descriptionPDF": "PRO360 is an access portal for Bosch Professional services.\nUsers can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.\nI am part of one of the feature teams, which includes 3 frontend developers, myself included.\nOur work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
+        "skills": ["React", "React Native", "Redux", "RxJS", "Jasmine"]
+      },
+      {
+        "id": "job-bosch2",
+        "company": "Bosch",
+        "date": "Nov 2022 — Jan 2024",
         "role": "Senior Frontend Developer",
         "project": "RefinemySite",
-        "description": "LEAN colaboration platform.",
-        "descriptionPDF": "LEAN colaboration platform.",
+        "description": "LEAN colaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
+        "descriptionPDF": "LEAN colaboration platform.\nI was part of the BIM team, one of the feature teams of this project.\nThis frontend team had 3 developers, including me.\nI mostly worked with 3D models, using Three.js and IFC.js libraries.\nThis project went into maintenance mode, which is why I moved to another project.",
         "skills": [
           "Angular 16",
           "NgRx",
@@ -49,7 +59,7 @@
         "id": "job-kpmg1",
         "company": "KPMG (Boost IT)",
         "date": "Oct 2021 — Feb 2022",
-        "role": "Frontend Developer",
+        "role": "Senior Frontend Developer",
         "project": "AEOI - Tax reporting",
         "description": "Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i><br>Lead frontend team of 4 developers.",
         "descriptionPDF": "Help and simplify tax reporting obligations.\nMigrate the old webapp from AngularJS to Angular 12.\nLead frontend team of 4 developers.",
@@ -144,7 +154,7 @@
   },
   "interests": {
     "title": "Interests",
-    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Dog owner. 🐶",
-    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nDog owner."
+    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Father of Afonso. 👶🏻<br>Dog owner. 🐶",
+    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nFather of Afonso.\nDog owner."
   }
 }

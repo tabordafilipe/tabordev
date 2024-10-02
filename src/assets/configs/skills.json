@@ -10,7 +10,7 @@
       "id": "skill-react",
       "name": "react",
       "description": "React",
-      "classification": 3.5
+      "classification": 4
     },
     {
       "id": "skill-nextjs",
@@ -19,9 +19,20 @@
       "classification": 3.5
     },
     {
-      "id": "skill-nodejs",
-      "name": "nodejs",
-      "description": "Node.JS",
+      "id": "skill-react-native",
+      "name": "reactnative",
+      "description": "React Native",
+      "classification": 3.5
+    },
+    {
+      "id": "skill-ngrx",
+      "name": "ngrx",
+      "description": "NgRx",
+      "classification": 4
+    }, {
+      "id": "skill-redux",
+      "name": "redux",
+      "description": "Redux",
       "classification": 4
     },
     {
@@ -31,16 +42,16 @@
       "classification": 4.5
     },
     {
-      "id": "skill-ngrx",
-      "name": "ngrx",
-      "description": "NgRx",
-      "classification": 4
-    },
-    {
       "id": "skill-jasmine",
       "name": "jasmine",
       "description": "Jasmine",
       "classification": 3.5
+    },
+    {
+      "id": "skill-nodejs",
+      "name": "nodejs",
+      "description": "Node.JS",
+      "classification": 4
     },
     {
       "id": "skill-typescript",

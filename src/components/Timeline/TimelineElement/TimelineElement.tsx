@@ -4,7 +4,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import stylesTimeline from "./TimelineElement.module.scss";
 import Image from "next/image";
 import Chip from "@/components/Chip/Chip";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "@/hooks/IsMobile";
 

@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           {`© ${currentYear} - `}
           <a className="font-semibold" href="mailto:tabordev.code@gmail.com">
-            tabordev
+            Filipe Taborda
           </a>
         </div>
         <a

@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, ReactNode, useEffect } from "react";
 import styles from "./Drawer.module.scss";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import Icon from "../Icon/Icon";
 
 export enum DrawerAnchor {

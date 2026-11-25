@@ -6,7 +6,9 @@ export interface IconInfo {
 
 export interface Info {
   name: string;
-  descriptionSequence: Array<string | number>;
+  location: string;
+  role: string;
+  tagline: string;
   summary: string;
   icons: IconInfo[];
 }

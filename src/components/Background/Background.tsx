@@ -6,7 +6,7 @@ import particlesOptionsDark from "@/assets/configs/particles/particles-dark.json
 import { loadFull } from "tsparticles";
 import type { Engine, ISourceOptions } from "tsparticles-engine";
 import styles from "./Background.module.scss";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import { useEffect, useState } from "react";
 
 export default function Background() {

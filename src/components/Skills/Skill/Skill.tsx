@@ -1,4 +1,4 @@
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import styles from "./Skill.module.scss";
 import SkillImage from "./SkillImage";
 import { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ export default function Skill({
 }: SkillProps) {
   const { isDarkMode } = useDarkMode();
   const [skillClassification, setSkillClassification] = useState<
-    JSX.Element[] | null
+    React.JSX.Element[] | null
   >(null);
 
   useEffect(

@@ -1,7 +1,7 @@
 {
   "info": {
     "name": "Filipe Taborda",
-    "role": "Frontend Software Developer",
+    "role": "Senior Frontend Engineer",
     "contacts": {
       "email": "tabordev.code@gmail.com",
       "phone": "+351 913 360 567",
@@ -10,7 +10,7 @@
     }
   },
   "experience": {
-    "title": "Profissional Experience",
+    "title": "Professional Experience",
     "jobs": [
       {
         "id": "job-bosch1",
@@ -20,7 +20,7 @@
         "project": "PRO360 (One PRO Ecosystem)",
         "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360</strong></a> is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams, which includes 3 frontend developers, myself included.<br>Our work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
         "descriptionPDF": "PRO360 is an access portal for Bosch Professional services.\nUsers can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.\nI am part of one of the feature teams, which includes 3 frontend developers, myself included.\nOur work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
-        "skills": ["React", "React Native", "Redux", "RxJS", "Jasmine"]
+        "skills": ["React", "React Native", "TypeScript", "Redux", "RxJS", "Jasmine"]
       },
       {
         "id": "job-bosch2",
@@ -28,8 +28,8 @@
         "date": "Nov 2022 — Jan 2024",
         "role": "Senior Frontend Developer",
         "project": "RefinemySite",
-        "description": "LEAN colaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
-        "descriptionPDF": "LEAN colaboration platform.\nI was part of the BIM team, one of the feature teams of this project.\nThis frontend team had 3 developers, including me.\nI mostly worked with 3D models, using Three.js and IFC.js libraries.\nThis project went into maintenance mode, which is why I moved to another project.",
+        "description": "LEAN collaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
+        "descriptionPDF": "LEAN collaboration platform.\nI was part of the BIM team, one of the feature teams of this project.\nThis frontend team had 3 developers, including me.\nI mostly worked with 3D models, using Three.js and IFC.js libraries.\nThis project went into maintenance mode, which is why I moved to another project.",
         "skills": [
           "Angular 16",
           "NgRx",
@@ -81,8 +81,8 @@
         "date": "Oct 2018 — May 2021",
         "role": "Full Stack Developer",
         "project": "PT Telco",
-        "description": "Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>Also have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
-        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA and SIGI (webapps to be used by NOS co-workers).\nAlso have been envolved in other projects, to make some more technical decisions and guide the more junior developers.",
+        "description": "Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>I was also involved in other projects, making technical decisions and guide the more junior developers.",
+        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA and SIGI (webapps to be used by NOS co-workers).\nI was also involved in other projects, making technical decisions and guide the more junior developers.",
         "skills": [
           "Angular 7-11",
           "Node.JS",
@@ -100,16 +100,16 @@
         "date": "Jul 2017 — Oct 2018",
         "role": "Junior Full Stack Developer",
         "project": "EDSN, Netherlands",
-        "description": "Migrate an internal management webapp from Adobe Flash into Angular 6 on the frontend and Sprint MVN framework with Java 8 on the backend.",
-        "descriptionPDF": "Migrate an internal management webapp from Adobe Flash into Angular 6 on the frontend and Sprint MVN framework with Java 8 on the backend.",
-        "skills": ["Angular 6", "Adobe Flash", "Spring MVN", "Java 8"]
+        "description": "Migrated an internal management webapp from Adobe Flash to Angular 6 on the frontend and Spring MVC with Java 8 on the backend.",
+        "descriptionPDF": "Migrated an internal management webapp from Adobe Flash to Angular 6 on the frontend and Spring MVC with Java 8 on the backend.",
+        "skills": ["Angular 6", "Adobe Flash", "Spring MVC", "Java 8"]
       }
     ]
   },
   "about": {
     "title": "About",
-    "description": "Portugal 🇵🇹, Lisbon.<br>I consider myself a <strong>full-stack engineer</strong> but I am currently only focused on <strong>front-end development</strong>.<br>I define myself being a communicative person and easy to learn about new subjects.",
-    "descriptionPDF": "Portugal, Lisbon.\nI consider myself a full-stack engineer but I am currently only focused on front-end development.\nI define myself being a communicative person and easy to learn about new subjects."
+    "description": "Portugal 🇵🇹, Lisbon.<br>Senior frontend engineer with a <strong>full-stack</strong> background, focused on <strong>web and mobile</strong> with <strong>React, React Native and TypeScript</strong>.<br>Communicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows.",
+    "descriptionPDF": "Portugal, Lisbon.\nSenior frontend engineer with a full-stack background, focused on web and mobile with React, React Native and TypeScript.\nCommunicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows."
   },
   "skills": {
     "title": "Skills",
@@ -117,11 +117,13 @@
       {
         "group": "Libraries & Frameworks",
         "skills": [
+          "React",
+          "React Native",
+          "Next.js",
           "Angular",
           "NgRx",
+          "Redux",
           "RxJS",
-          "Next.js",
-          "React",
           "Jasmine",
           "Node.js",
           "Nest.js"
@@ -148,13 +150,13 @@
   },
   "education": {
     "title": "Education",
-    "university": "ISCTE-IUL - University Instituite of Lisbon",
+    "university": "ISCTE-IUL - University Institute of Lisbon",
     "course": "Computer Science and Telecommunications Engineering",
     "degree": "Bachelor degree"
   },
   "interests": {
     "title": "Interests",
-    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Father of Afonso. 👶🏻<br>Dog owner. 🐶",
-    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nFather of Afonso.\nDog owner."
+    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Dog owner. 🐶",
+    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nDog owner."
   }
 }

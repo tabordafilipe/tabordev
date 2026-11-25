@@ -12,7 +12,7 @@ import TimelineElement from "./TimelineElement/TimelineElement";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import config from "../../../tailwind.config";
 import timelineStyles from "./Timeline.module.scss";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import { useIsMobile } from "@/hooks/IsMobile";
 
 const { colors } = config.theme as any;

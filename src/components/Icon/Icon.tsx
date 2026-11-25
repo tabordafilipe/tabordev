@@ -1,6 +1,6 @@
 import styles from "./Icon.module.scss";
 import { useEffect, useRef } from "react";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 
 export interface IconProps extends React.SVGAttributes<HTMLOrSVGElement> {
   name: string;

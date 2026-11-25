@@ -1,12 +1,9 @@
 {
   "name": "Filipe Taborda",
-  "descriptionSequence": [
-    "software developer",
-    1000,
-    "(frontend) software developer",
-    1000
-  ],
-  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda from Portugal 🇵🇹, currently based in Lisbon.</p><br><p>I consider myself a <strong>full-stack engineer</strong> but currently I am only focused in <strong>frontend development</strong>.</p><br><p>Nevertheless, I am always open to learn other and new technologies. 🚀</p><br><br><p><i>Life begins at the end of your confort zone.</i> - Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
+  "location": "Lisbon, Portugal",
+  "role": "Senior Frontend Engineer",
+  "tagline": "I build web and mobile products.",
+  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda, a <strong>senior frontend engineer</strong> from Portugal 🇵🇹, based in Lisbon.</p><br><p>I started as a <strong>full-stack developer</strong> (Angular, Node.js, Java) and today I focus on <strong>web and mobile frontend</strong> with <strong>React, React Native and TypeScript</strong>. At <strong>Bosch</strong> I work on the PRO360 ecosystem.</p><br><p>I care about quality: maintainable, well-tested code, with validation at the centre of the process. I also explore <strong>AI-assisted development</strong> tools and workflows to ship better software, faster. 🚀</p><br><br><p><i>Life begins at the end of your comfort zone.</i> - Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
 
   "icons": [
     {

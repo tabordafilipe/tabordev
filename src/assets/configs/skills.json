@@ -1,27 +1,33 @@
 {
   "skills": [
     {
-      "id": "skill-angular",
-      "name": "angular",
-      "description": "Angular",
-      "classification": 5
-    },
-    {
       "id": "skill-react",
       "name": "react",
       "description": "React",
+      "classification": 4.5
+    },
+    {
+      "id": "skill-typescript",
+      "name": "typescript",
+      "description": "Typescript",
+      "classification": 5
+    },
+    {
+      "id": "skill-react-native",
+      "name": "reactnative",
+      "description": "React Native",
+      "classification": 4
+    },
+    {
+      "id": "skill-angular",
+      "name": "angular",
+      "description": "Angular",
       "classification": 4
     },
     {
       "id": "skill-nextjs",
       "name": "nextjs",
       "description": "Next.JS",
-      "classification": 3.5
-    },
-    {
-      "id": "skill-react-native",
-      "name": "reactnative",
-      "description": "React Native",
       "classification": 3.5
     },
     {
@@ -52,12 +58,6 @@
       "name": "nodejs",
       "description": "Node.JS",
       "classification": 4
-    },
-    {
-      "id": "skill-typescript",
-      "name": "typescript",
-      "description": "Typescript",
-      "classification": 4.5
     },
     {
       "id": "skill-javascript",

@@ -6,10 +6,17 @@ import Background from "@/components/Background/Background";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { IsLogoVisibleContext } from "@/hooks/IsVisible";
-import { useState } from "react";
+import { useDarkMode } from "@/hooks/DarkMode";
+import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isLogoVisible, setIsLogoVisible] = useState<boolean | null>(null);
+  const { isDarkMode } = useDarkMode();
+
+  useEffect(() => {
+    document.body.classList.remove("light", "dark");
+    document.body.classList.add(isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
 
   return (
     <IsLogoVisibleContext.Provider

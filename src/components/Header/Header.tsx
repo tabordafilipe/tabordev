@@ -9,7 +9,7 @@ import SECTIONS from "@/assets/configs/sections.json";
 import { Sections } from "@/models/section.model";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import styles from "./Header.module.scss";
-import { useDarkMode } from "usehooks-ts";
+import { useDarkMode } from "@/hooks/DarkMode";
 import { useIsMobile } from "@/hooks/IsMobile";
 
 const sections = SECTIONS as Sections;
@@ -55,11 +55,7 @@ export default function Header() {
     }
   };
 
-  const logo = isMobile ? (
-    <Logo alt="Logo header small" width={40} height={40} small />
-  ) : (
-    <Logo alt="Logo header" width={200} height={200} />
-  );
+  const logo = <Logo small={isMobile} />;
 
   const link = (name: string, href: string) => (
     <a className={linkClassName} href={href} onClick={handleClose}>

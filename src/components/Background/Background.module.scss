@@ -1,30 +1,126 @@
 @import "../../styles/mixins";
 @import "../../styles/constants/index.scss";
 
+@keyframes drift-1 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12vw, 8vh, 0) scale(1.15);
+  }
+}
+
+@keyframes drift-2 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-10vw, -12vh, 0) scale(0.9);
+  }
+}
+
+@keyframes drift-3 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.1);
+  }
+  50% {
+    transform: translate3d(-8vw, 10vh, 0) scale(1);
+  }
+}
+
 .Background {
-  width: 100vw;
-  height: 100vh;
   position: fixed;
+  inset: 0;
   z-index: -10;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  // Cursor position is parked off-screen until the first pointer move.
+  --mouse-x: -999px;
+  --mouse-y: -999px;
 
   &--light {
+    --blob-1: #{$green_40};
+    --blob-2: #{$green_30};
+    --blob-3: #{$green_40};
+    --blob-alpha: 1;
+    --dot: #{$light-foreground};
     @include theme-background($light-background-start, $light-background-end);
   }
 
   &--dark {
+    --blob-1: #{$green_75};
+    --blob-2: #{$green_40};
+    --blob-3: #{$green_75};
+    --blob-alpha: 0.35;
+    --dot: #{$dark-foreground};
     @include theme-background($dark-background-start, $dark-background-end);
   }
 
-  canvas {
-    display: block;
-    vertical-align: bottom;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-    transition: opacity 0.8s ease, transform 1.4s ease;
+  &__Blob {
+    position: absolute;
+    width: 45vmax;
+    height: 45vmax;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: calc(0.55 * var(--blob-alpha));
+    will-change: transform;
+
+    &_1 {
+      top: -15vmax;
+      left: -10vmax;
+      background: var(--blob-1);
+      animation: drift-1 28s ease-in-out infinite;
+    }
+
+    &_2 {
+      right: -12vmax;
+      bottom: -15vmax;
+      background: var(--blob-2);
+      opacity: calc(0.4 * var(--blob-alpha));
+      animation: drift-2 34s ease-in-out infinite;
+    }
+
+    &_3 {
+      top: 35%;
+      left: 40%;
+      width: 30vmax;
+      height: 30vmax;
+      background: var(--blob-3);
+      opacity: calc(0.3 * var(--blob-alpha));
+      animation: drift-3 40s ease-in-out infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+
+  &__Grid,
+  &__Spotlight {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  &__Grid {
+    opacity: 0.12;
+  }
+
+  &__Spotlight {
+    opacity: 0.55;
+    mask-image: radial-gradient(
+      circle 220px at var(--mouse-x) var(--mouse-y),
+      #000,
+      transparent
+    );
+    -webkit-mask-image: radial-gradient(
+      circle 220px at var(--mouse-x) var(--mouse-y),
+      #000,
+      transparent
+    );
   }
 }

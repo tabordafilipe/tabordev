@@ -9,7 +9,7 @@
     {
       "id": "skill-typescript",
       "name": "typescript",
-      "description": "Typescript",
+      "description": "TypeScript",
       "classification": 5
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "skill-nextjs",
       "name": "nextjs",
-      "description": "Next.JS",
+      "description": "Next.js",
       "classification": 3.5
     },
     {
@@ -56,13 +56,13 @@
     {
       "id": "skill-nodejs",
       "name": "nodejs",
-      "description": "Node.JS",
+      "description": "Node.js",
       "classification": 4
     },
     {
       "id": "skill-javascript",
       "name": "javascript",
-      "description": "Javascript",
+      "description": "JavaScript",
       "classification": 4.5
     },
     {
@@ -80,7 +80,7 @@
     {
       "id": "skill-sass",
       "name": "sass",
-      "description": "SaSS",
+      "description": "Sass",
       "classification": 4
     }
   ],
@@ -130,7 +130,7 @@
     {
       "id": "skill-visualcode",
       "name": "visualcode",
-      "description": "Visual Code",
+      "description": "VS Code",
       "classification": 3
     }
   ]

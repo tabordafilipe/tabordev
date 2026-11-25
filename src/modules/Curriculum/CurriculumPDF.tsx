@@ -129,7 +129,6 @@ export default function CurriculumPDF() {
             {/* CONTACTS section */}
             <View style={{ ...styles.columnSection, marginTop: "10" }}>
               <Text style={styles.h5}>{info.contacts.email}</Text>
-              <Text style={styles.h5}>{info.contacts.phone}</Text>
               <Link
                 style={{ ...styles.h5, ...styles.link }}
                 src={`https://${info.contacts.linkedin}`}

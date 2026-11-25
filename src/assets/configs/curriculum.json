@@ -4,7 +4,6 @@
     "role": "Senior Frontend Engineer",
     "contacts": {
       "email": "filipe.taborda92@gmail.com",
-      "phone": "+351 913 360 567",
       "linkedin": "linkedin.com/in/tabordafilipe",
       "website": "tabordafilipe.pt"
     }
@@ -16,17 +15,17 @@
         "id": "job-bosch1",
         "company": "Bosch",
         "date": "Jan 2024 — Present",
-        "role": "Senior Frontend Developer",
+        "role": "Senior Frontend Engineer",
         "project": "PRO360 (One PRO Ecosystem)",
-        "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360</strong></a> is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams, which includes 3 frontend developers, myself included.<br>Our work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
-        "descriptionPDF": "PRO360 is an access portal for Bosch Professional services.\nUsers can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.\nI am part of one of the feature teams, which includes 3 frontend developers, myself included.\nOur work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the webapp and mobile app.",
+        "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360</strong></a> is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams, which includes 3 frontend developers, myself included.<br>Our work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the web and mobile apps.",
+        "descriptionPDF": "PRO360 is an access portal for Bosch Professional services.\nUsers can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.\nI am part of one of the feature teams, which includes 3 frontend developers, myself included.\nOur work focuses primarily on redesigning and enhancing existing features, while also adding new ones, in the web and mobile apps.",
         "skills": ["React", "React Native", "TypeScript", "Redux", "RxJS", "Jasmine"]
       },
       {
         "id": "job-bosch2",
         "company": "Bosch",
         "date": "Nov 2022 — Jan 2024",
-        "role": "Senior Frontend Developer",
+        "role": "Senior Frontend Engineer",
         "project": "RefinemySite",
         "description": "LEAN collaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
         "descriptionPDF": "LEAN collaboration platform.\nI was part of the BIM team, one of the feature teams of this project.\nThis frontend team had 3 developers, including me.\nI mostly worked with 3D models, using Three.js and IFC.js libraries.\nThis project went into maintenance mode, which is why I moved to another project.",
@@ -43,15 +42,15 @@
         "id": "job-kpmg2",
         "company": "KPMG (Boost IT)",
         "date": "Feb 2022 — Nov 2022",
-        "role": "Senior Frontend Developer",
+        "role": "Senior Frontend Engineer",
         "project": "KYC - New clients onboarding",
-        "description": "Building a <i>Know Your Customer</i> platform, with 7 frontend developers.<br> I was part of the leading team, with other frontend co-worker.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
-        "descriptionPDF": "Building a Know Your Customer platform, with 7 frontend developers.\nI was part of the leading team, with other frontend co-worker.\nWeb application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+        "description": "Built a <i>Know Your Customer</i> platform with 7 frontend developers.<br>I was part of the leading team, together with another frontend colleague.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+        "descriptionPDF": "Built a Know Your Customer platform with 7 frontend developers.\nI was part of the leading team, together with another frontend colleague.\nWeb application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
         "skills": [
           "Angular 12",
           "Micro-frontends",
-          "Nest.JS",
-          "Node.JS",
+          "NestJS",
+          "Node.js",
           "RxJS"
         ]
       },
@@ -59,10 +58,10 @@
         "id": "job-kpmg1",
         "company": "KPMG (Boost IT)",
         "date": "Oct 2021 — Feb 2022",
-        "role": "Senior Frontend Developer",
+        "role": "Senior Frontend Engineer",
         "project": "AEOI - Tax reporting",
-        "description": "Help and simplify tax reporting obligations.<br>Migrate the old webapp from <i>AngularJS</i> to <i>Angular 12</i><br>Lead frontend team of 4 developers.",
-        "descriptionPDF": "Help and simplify tax reporting obligations.\nMigrate the old webapp from AngularJS to Angular 12.\nLead frontend team of 4 developers.",
+        "description": "Helped simplify tax reporting obligations.<br>Migrated the old webapp from <i>AngularJS</i> to <i>Angular 12</i>.<br>Led a frontend team of 4 developers.",
+        "descriptionPDF": "Helped simplify tax reporting obligations.\nMigrated the old webapp from AngularJS to Angular 12.\nLed a frontend team of 4 developers.",
         "skills": ["Angular 12", "AngularJS", "Migration"]
       },
       {
@@ -71,9 +70,9 @@
         "date": "May 2021 — Oct 2021",
         "role": "Full Stack Developer",
         "project": "US Telco",
-        "description": "Develop new features for <i>WOW! for business.</i><br>Lead frontend team of 6 developers.",
-        "descriptionPDF": "Develop new features for WOW! for business.\nLead frontend team of 6 developers.",
-        "skills": ["React", "Next.js", "Node.JS", "Serverless", "AWS"]
+        "description": "Developed new features for <i>WOW! for business</i>.<br>Led a frontend team of 6 developers.",
+        "descriptionPDF": "Developed new features for WOW! for business.\nLed a frontend team of 6 developers.",
+        "skills": ["React", "Next.js", "Node.js", "Serverless", "AWS"]
       },
       {
         "id": "job-nos",
@@ -81,17 +80,17 @@
         "date": "Oct 2018 — May 2021",
         "role": "Full Stack Developer",
         "project": "PT Telco",
-        "description": "Develop, design and build all the layers (frontend and backend) in <i>FCNA</i> and <i>SIGI</i> (webapps to be used by <i>NOS</i> co-workers).<br>I was also involved in other projects, making technical decisions and guide the more junior developers.",
-        "descriptionPDF": "Develop, design and build all the layers (frontend and backend) in FCNA and SIGI (webapps to be used by NOS co-workers).\nI was also involved in other projects, making technical decisions and guide the more junior developers.",
+        "description": "Developed, designed and built all the layers (frontend and backend) of <i>FCNA</i> and <i>SIGI</i> (webapps used internally by <i>NOS</i> colleagues).<br>I was also involved in other projects, making technical decisions and guiding more junior developers.",
+        "descriptionPDF": "Developed, designed and built all the layers (frontend and backend) of FCNA and SIGI (webapps used internally by NOS colleagues).\nI was also involved in other projects, making technical decisions and guiding more junior developers.",
         "skills": [
           "Angular 7-11",
-          "Node.JS",
+          "Node.js",
           "Express",
-          "Nest.js",
+          "NestJS",
           "Java",
           "MongoDB",
           "Docker",
-          "K8"
+          "K8s"
         ]
       },
       {
@@ -108,8 +107,8 @@
   },
   "about": {
     "title": "About",
-    "description": "Portugal 🇵🇹, Lisbon.<br>Senior frontend engineer with a <strong>full-stack</strong> background, focused on <strong>web and mobile</strong> with <strong>React, React Native and TypeScript</strong>.<br>Communicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows.",
-    "descriptionPDF": "Portugal, Lisbon.\nSenior frontend engineer with a full-stack background, focused on web and mobile with React, React Native and TypeScript.\nCommunicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows."
+    "description": "Lisbon, Portugal 🇵🇹.<br>Senior frontend engineer with a <strong>full-stack</strong> background, focused on <strong>web and mobile</strong> with <strong>React, React Native and TypeScript</strong>.<br>Communicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows.",
+    "descriptionPDF": "Lisbon, Portugal.\nSenior frontend engineer with a full-stack background, focused on web and mobile with React, React Native and TypeScript.\nCommunicative, quality-driven and quick to learn new subjects, including AI-assisted development workflows."
   },
   "skills": {
     "title": "Skills",
@@ -126,24 +125,24 @@
           "RxJS",
           "Jasmine",
           "Node.js",
-          "Nest.js"
+          "NestJS"
         ]
       },
       {
         "group": "Programming Languages",
-        "skills": ["Typescript", "Javascript", "HTML5", "CSS3", "SASS", "LESS"]
+        "skills": ["TypeScript", "JavaScript", "HTML5", "CSS3", "Sass"]
       },
       {
         "group": "Tools & Platforms",
         "skills": [
           "MariaDB",
-          "MongoDb",
+          "MongoDB",
           "Docker",
           "Kubernetes",
           "AWS",
           "Azure",
           "Git",
-          "Visual Code"
+          "VS Code"
         ]
       }
     ]
@@ -152,11 +151,11 @@
     "title": "Education",
     "university": "ISCTE-IUL - University Institute of Lisbon",
     "course": "Computer Science and Telecommunications Engineering",
-    "degree": "Bachelor degree"
+    "degree": "Bachelor's degree"
   },
   "interests": {
     "title": "Interests",
-    "description": "Love to code. 💻<br>On my free times, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>Crossfit addicted. 🏋🏽‍♀️<br>Dog owner. 🐶",
-    "descriptionPDF": "Love to code.\nOn my free times, I like to go outside, get some fresh air, and take a break from technology.\nCrossfit addicted.\nDog owner."
+    "description": "I love to code. 💻<br>In my free time, I like to go outside, get some fresh air 🌿, and take a break from technology.<br>CrossFit enthusiast. 🏋🏽‍♀️<br>Dog owner. 🐶",
+    "descriptionPDF": "I love to code.\nIn my free time, I like to go outside, get some fresh air, and take a break from technology.\nCrossFit enthusiast.\nDog owner."
   }
 }

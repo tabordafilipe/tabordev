@@ -3,7 +3,6 @@ export interface CurriculumInfo {
   role: string;
   contacts: {
     email: string;
-    phone: string;
     linkedin: string;
     website: string;
   };

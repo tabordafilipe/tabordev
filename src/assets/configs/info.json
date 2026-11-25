@@ -3,18 +3,18 @@
   "location": "Lisbon, Portugal",
   "role": "Senior Frontend Engineer",
   "tagline": "I build web and mobile products.",
-  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda, a <strong>senior frontend engineer</strong> from Portugal 🇵🇹, based in Lisbon.</p><br><p>I started as a <strong>full-stack developer</strong> (Angular, Node.js, Java) and today I focus on <strong>web and mobile frontend</strong> with <strong>React, React Native and TypeScript</strong>. At <strong>Bosch</strong> I work on the PRO360 ecosystem.</p><br><p>I care about quality: maintainable, well-tested code, with validation at the centre of the process. I also explore <strong>AI-assisted development</strong> tools and workflows to ship better software, faster. 🚀</p><br><br><p><i>Life begins at the end of your comfort zone.</i> - Neale Donald Walsch</p><br><br><p style=\"text-align:center\"><i>Coffee ☕️ → Code 💻 → Eat 🍔 → Crossfit 🏋🏽‍♀️ → Travel ✈️ → Repeat 🔁</i></p>",
+  "summary": "<p><strong>Hey 👋🏼</strong></p><br><br><p>I am Filipe Taborda, a <strong>senior frontend engineer</strong> from Portugal 🇵🇹, based in Lisbon.</p><br><p>I started as a <strong>full-stack developer</strong> (Angular, Node.js, Java) and today I focus on <strong>web and mobile frontend</strong> with <strong>React, React Native and TypeScript</strong>. At <strong>Bosch</strong> I work on the PRO360 ecosystem.</p><br><p>I care about quality: maintainable, well-tested code, with validation at the center of the process. I also explore <strong>AI-assisted development</strong> tools and workflows to ship better software, faster. 🚀</p><br><br><p style=\"text-align:right\"><i>Life begins at the end of your comfort zone.</i></p>",
 
   "icons": [
     {
       "href": "https://www.linkedin.com/in/tabordafilipe",
       "name": "linkedin",
-      "title": "Linkedin"
+      "title": "LinkedIn"
     },
     {
       "href": "https://github.com/tabordafilipe",
       "name": "github",
-      "title": "Github"
+      "title": "GitHub"
     },
     {
       "href": "https://medium.com/@filipe.taborda92",

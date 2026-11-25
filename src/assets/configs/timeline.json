@@ -5,8 +5,8 @@
       "type": "work",
       "date": "Jan 2024 — Present",
       "title": "Bosch",
-      "subtitle": "Senior Frontend Developer",
-      "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360 (One PRO Ecosystem)</strong></a><br><br>Pro360 is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams (3 frontend developers, myself included), working on the web and mobile apps.<br>Our work focuses on redesigning and enhancing existing features, as well as delivering new ones.",
+      "subtitle": "Senior Frontend Engineer",
+      "description": "<a href=\"https://www.bosch-professional.com/gb/en/\" target=\"_blank\"><strong>PRO360 (One PRO Ecosystem)</strong></a><br><br>PRO360 is an access portal for Bosch Professional services.<br>Users can register once to enjoy benefits, such as extending their tool warranty from 1 to 3 years.<br>I am part of one of the feature teams (3 frontend developers, myself included), working on the web and mobile apps.<br>Our work focuses on redesigning and enhancing existing features, as well as delivering new ones.",
       "image": "bosch.png",
       "chips": ["React", "React Native", "TypeScript", "Redux", "RxJS", "Jasmine"]
     },
@@ -15,7 +15,7 @@
       "type": "work",
       "date": "Nov 2022 — Jan 2024",
       "title": "Bosch",
-      "subtitle": "Senior Frontend Developer",
+      "subtitle": "Senior Frontend Engineer",
       "description": "<a href=\"https://www.bosch-refinemysite.us/\" target=\"_blank\"><strong>RefinemySite</strong></a><br><br>LEAN collaboration platform.<br>I was part of the BIM team, one of the feature teams of this project.<br>This frontend team had 3 developers, including me.<br>I mostly worked with 3D models, using <a href=\"https://github.com/mrdoob/three.js/\" target=\"_blank\"><strong>Three.js</strong></a> and <a href=\"https://github.com/ThatOpen/web-ifc-three\" target=\"_blank\"><strong>IFC.js</strong></a> libraries.<br>This project went into maintenance mode, which is why I moved to another project.",
       "image": "bosch.png",
       "chips": ["Angular 16", "NgRx", "RxJS", "Three.js", "IFC.js", "Jasmine"]
@@ -25,18 +25,18 @@
       "type": "work",
       "date": "Feb 2022 — Nov 2022",
       "title": "KPMG",
-      "subtitle": "Senior Frontend Developer",
-      "description": "<strong>KYC - New clients onboarding</strong><br><br>Building a <i>Know Your Customer</i> platform with 7 frontend developers.<br>I was part of the leading team, together with another frontend colleague.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
+      "subtitle": "Senior Frontend Engineer",
+      "description": "<strong>KYC - New clients onboarding</strong><br><br>Built a <i>Know Your Customer</i> platform with 7 frontend developers.<br>I was part of the leading team, together with another frontend colleague.<br>Web application built with a Micro-frontends architecture, with one BFF (Backend For Frontend) for each Micro-frontend.",
       "image": "kpmg.png",
-      "chips": ["Angular 12", "Micro-frontends", "Nest.JS", "Node.JS", "RxJS"]
+      "chips": ["Angular 12", "Micro-frontends", "NestJS", "Node.js", "RxJS"]
     },
     {
       "id": "step-kpmg1",
       "type": "work",
       "date": "Oct 2021 — Feb 2022",
       "title": "KPMG",
-      "subtitle": "Senior Frontend Developer",
-      "description": "<strong>AEOI - Tax reporting</strong><br><br>Help simplify tax reporting obligations.<br>Migrated the old webapp from <i>AngularJS</i> to <i>Angular 12</i>.",
+      "subtitle": "Senior Frontend Engineer",
+      "description": "<strong>AEOI - Tax reporting</strong><br><br>Helped simplify tax reporting obligations.<br>Migrated the old webapp from <i>AngularJS</i> to <i>Angular 12</i>.<br>Led a frontend team of 4 developers.",
       "image": "kpmg.png",
       "chips": ["Angular 12", "AngularJS", "Migration"]
     },
@@ -46,9 +46,9 @@
       "date": "May 2021 — Oct 2021",
       "title": "WOW!",
       "subtitle": "Full Stack Developer",
-      "description": "<strong>US Telco</strong><br><br>Developed new features for <i>WOW! for business</i>, working across frontend and backend.",
+      "description": "<strong>US Telco</strong><br><br>Developed new features for <i>WOW! for business</i>, working across frontend and backend.<br>Led a frontend team of 6 developers.",
       "image": "wow.png",
-      "chips": ["React", "Next.js", "Node.JS", "Serverless", "AWS"]
+      "chips": ["React", "Next.js", "Node.js", "Serverless", "AWS"]
     },
     {
       "id": "step-nos",
@@ -61,13 +61,13 @@
       "imageDark": "nos-dark.png",
       "chips": [
         "Angular 7-11",
-        "Node.JS",
+        "Node.js",
         "Express",
-        "Nest.js",
+        "NestJS",
         "Java",
         "MongoDB",
         "Docker",
-        "K8"
+        "K8s"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "date": "2013 — 2017",
       "title": "ISCTE",
       "subtitle": "Computer Science and Telecommunications Engineering",
-      "description": "<strong>Bachelor degree</strong><br><br>ISCTE-IUL - University Institute of Lisbon",
+      "description": "<strong>Bachelor's degree</strong><br><br>ISCTE-IUL - University Institute of Lisbon",
       "image": "iscte.png",
       "imageDark": "iscte-dark.png"
     }

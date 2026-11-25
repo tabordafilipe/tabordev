@@ -73,14 +73,6 @@ export default function Curriculum() {
               </a>
             </h5>
             <h5 className={classes.h5}>
-              <a
-                href={`tel:${info.contacts.phone.replace(/\s+/g, "")}`}
-                target="_blank"
-              >
-                {info.contacts.phone}
-              </a>
-            </h5>
-            <h5 className={classes.h5}>
               <a href={`https://${info.contacts.linkedin}`} target="_blank">
                 {info.contacts.linkedin}
               </a>

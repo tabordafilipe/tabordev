@@ -1,4 +1,4 @@
-@import "../../styles/constants/index.scss";
+@use "../../styles/constants/index.scss" as *;
 
 .Chip {
   display: flex;

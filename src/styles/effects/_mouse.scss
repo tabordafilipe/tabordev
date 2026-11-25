@@ -1,4 +1,4 @@
-@import "../constants/index";
+@use "../constants/index" as *;
 
 .mouse {
   width: 25px;

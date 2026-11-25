@@ -1,5 +1,5 @@
-@import "../../../styles/constants/index.scss";
-@import "../../../styles/mixins";
+@use "../../../styles/constants/index.scss" as *;
+@use "../../../styles/mixins" as *;
 
 $size: 1.5rem;
 $transparent: transparent;

@@ -1,5 +1,5 @@
-@import "../../styles/constants/index.scss";
-@import "../../styles/mixins";
+@use "../../styles/constants/index.scss" as *;
+@use "../../styles/mixins" as *;
 
 .Drawer {
   top: 0;

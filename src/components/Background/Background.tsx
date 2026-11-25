@@ -1,40 +1,42 @@
-"use client";
+import { useEffect, useRef } from "react";
 
-import Particles from "react-particles";
-import particlesOptions from "@/assets/configs/particles/particles.json";
-import particlesOptionsDark from "@/assets/configs/particles/particles-dark.json";
-import { loadFull } from "tsparticles";
-import type { Engine, ISourceOptions } from "tsparticles-engine";
 import styles from "./Background.module.scss";
 import { useDarkMode } from "@/hooks/DarkMode";
-import { useEffect, useState } from "react";
 
 export default function Background() {
-  const [options, setOptions] = useState(particlesOptions as ISourceOptions);
-  const [className, setClassName] = useState("");
   const { isDarkMode } = useDarkMode();
-
-  const particlesInit = async (main: Engine) => await loadFull(main);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setOptions(
-      (isDarkMode ? particlesOptionsDark : particlesOptions) as ISourceOptions
-    );
-    setClassName(
-      `${styles.Background} ${
-        styles[`Background--${isDarkMode ? "dark" : "light"}`]
-      }`
-    );
-  }, [isDarkMode]);
+    const element = ref.current;
+    const hasFinePointer = window.matchMedia(
+      "(hover: hover) and (pointer: fine)"
+    ).matches;
+
+    if (!element || !hasFinePointer) return;
+
+    const onPointerMove = (event: PointerEvent) => {
+      element.style.setProperty("--mouse-x", `${event.clientX}px`);
+      element.style.setProperty("--mouse-y", `${event.clientY}px`);
+    };
+
+    window.addEventListener("pointermove", onPointerMove, { passive: true });
+    return () => window.removeEventListener("pointermove", onPointerMove);
+  }, []);
 
   return (
-    <>
-      <div className={className}></div>
-      <Particles
-        className={styles.Background}
-        init={particlesInit}
-        options={options}
-      />
-    </>
+    <div
+      ref={ref}
+      aria-hidden
+      className={`${styles.Background} ${
+        styles[`Background--${isDarkMode ? "dark" : "light"}`]
+      }`}
+    >
+      <span className={`${styles.Background__Blob} ${styles.Background__Blob_1}`} />
+      <span className={`${styles.Background__Blob} ${styles.Background__Blob_2}`} />
+      <span className={`${styles.Background__Blob} ${styles.Background__Blob_3}`} />
+      <div className={styles.Background__Grid} />
+      <div className={styles.Background__Spotlight} />
+    </div>
   );
 }

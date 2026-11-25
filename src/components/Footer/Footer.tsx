@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex justify-between">
         <div>
           {`© ${currentYear} - `}
-          <a className="font-semibold" href="mailto:tabordev.code@gmail.com">
+          <a className="font-semibold" href="mailto:filipe.taborda92@gmail.com">
             Filipe Taborda
           </a>
         </div>

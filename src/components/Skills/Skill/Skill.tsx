@@ -53,10 +53,14 @@ export default function Skill({
 
   return (
     <div id={id} className="w-full flex flex-row items-center justify-center">
-      <div className="w-32 flex flex-col items-center p-2 md:p-5 mr-2 md:mr-5">
-        <SkillImage name={name} description={description} />
+      <div className="w-[9.5rem] md:w-32 flex flex-col items-start md:items-center py-2 px-0 md:p-5 mr-2 md:mr-5">
+        <SkillImage
+          name={name}
+          description={description}
+          inlineOnMobile
+        />
       </div>
-      <div className="w-60 mb-4 space-x-5 flex flex-row items-center">
+      <div className="md:w-60 md:mb-4 space-x-2 md:space-x-5 flex flex-row items-center">
         {skillClassification}
       </div>
     </div>

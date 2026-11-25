@@ -41,13 +41,15 @@ export default function Home() {
       {/* INFO section */}
       <section className="h-screen w-full">
         <MyInfo info={info} onLogoVisible={onLogoVisible} />
-        <div className={styles.Home__MouseScrollContent}>
-          <div
-            className={`mouse dark:border-white-50 dark:before:bg-white-50 transition-opacity ease-in duration-700 ${
-              isLogoVisible ? "opacity-100" : "opacity-0"
-            }`}
-          ></div>
-        </div>
+        {!isMobile && (
+          <div className={styles.Home__MouseScrollContent}>
+            <div
+              className={`mouse dark:border-white-50 dark:before:bg-white-50 transition-opacity ease-in duration-700 ${
+                isLogoVisible ? "opacity-100" : "opacity-0"
+              }`}
+            ></div>
+          </div>
+        )}
       </section>
 
       {/* ABOUT section */}
@@ -61,7 +63,7 @@ export default function Home() {
       </Section>
 
       {/* TIMELINE section */}
-      <Section id={timeline.id} name={timeline.name} className="pb-32">
+      <Section id={timeline.id} name={timeline.name} className="pb-16 md:pb-32">
         <Timeline />
       </Section>
 

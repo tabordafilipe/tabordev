@@ -3,6 +3,7 @@ import Chip from "@/components/Chip/Chip";
 import { CurriculumModel } from "@/models/curriculum.model";
 import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
+import { getDotFills, ratedSkills } from "./skillDots";
 
 const curriculum = CURRICULUM as CurriculumModel;
 const { info, experience, about, skills, education, interests } = curriculum;
@@ -118,6 +119,34 @@ export default function Curriculum() {
               className="w-full flex flex-col space-y-4"
             >
               <h2 className={`${classes.h2} mb-5`}>{skills.title}</h2>
+              <div className="space-y-2">
+                {ratedSkills.map((skill) => (
+                  <div
+                    key={skill.id}
+                    className="flex items-center justify-between gap-2"
+                  >
+                    <span className={classes.p}>{skill.label}</span>
+                    <div className="flex gap-1">
+                      {getDotFills(skill.classification).map((fill, index) => (
+                        <span
+                          key={`${skill.id}_dot_${index}`}
+                          className={`block w-3 h-3 rounded-full border border-blue dark:border-white-25 ${
+                            fill === "full" ? "bg-green-25" : ""
+                          }`}
+                          style={
+                            fill === "half"
+                              ? {
+                                  background:
+                                    "linear-gradient(90deg, #aeb9b0 50%, transparent 50%)",
+                                }
+                              : undefined
+                          }
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
               {skills.skillsGroups.map((group, indexGroup) => (
                 <div key={`skill_group_${indexGroup}`} className="space-y-1">
                   <h3 className={classes.h3}>{group.group}</h3>
